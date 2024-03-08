@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
 <head>
   <meta charset="utf-8">
   <title>Device - интернет-магазин</title>
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
   <header class="page-header">
+    <a class="logo" href="index.html">
+      <img src="./img/logo_device_black.svg" alt="Логотип device">
+    </a>
+
+
+    <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+      <label class="search-field">
+        <span class="visually-hidden">Поиск продуктов по сайту</span>
+        <input class="search-input-field" type="text" name="search-form" placeholder="Текст поиска">
+      </label>
+      <button class="search-button" type="submit">Найти</button>
+    </form>
+
+    <ul class="user-menu-list">
+      <li class="user-menu-item">
+        <a class="visually-hidden" href="#">Имя Фамилия</a>
+      </li>
+      <li class="user-menu-item">
+        <a class="user-menu-link" href="#">Войти</a>
+      </li>
+      <li class="user-menu-item">
+        <a class="user-menu-link" href="#">Сравнить</a>
+      </li>
+      <li class="user-menu-item">
+        <span class="basket-counter">2</span>
+        <a class="user-menu-link" href="#">Корзина</a>
+      </li>
+    </ul>
+
     <nav>
-      <a class="logo" href="index.html">
-        <img src="./img/logo_device_black.svg" alt="Логотип device">
-      </a>
-
-
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="search-field">
-          <span class="visually-hidden">Поиск продуктов по сайту</span>
-          <input class="search-field" type="text" name="search-form" placeholder="Текст поиска">
-        </label>
-        <button class="search-buton" type="submit">Найти</button>
-      </form>
-
-      <ul class="user-menu-list">
-        <li class="user-menu-item">
-          <a class="visually-hidden" href="#">Имя Фамилия</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link" href="#">Войти</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link" href="#">Сравнить</a>
-        </li>
-        <li class="user-menu-item">
-          <span class="basket-counter">2</span>
-          <a class="user-menu-link" href="#">Корзина</a>
-        </li>
-      </ul>
-
       <ul class="page-menu-list">
         <li class="page-menu-item">
           <a class="page-menu-link" href="catalog.html">Каталог товаров</a>
@@ -66,20 +67,21 @@
       <img class="hero-banner-picture" src="./img/content/slider-1.jpg" alt="Модель квадракоптера">
       <span class="hero-banner-count">01</span>
       <p class="title">Порхает как бабочка, жалит как пчела!</p>
-      <p class="text"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
+      <p class="hero-banner-description"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+        замаскированным
         под стандартную камеру.</p>
       <a class="link" href="#">Подробнее</a>
-      <button class="hero-banner-button hero-banner-active">Баннер 1</button>
-      <button class="hero-banner-button hero-banner-active">Баннер 2</button>
-      <button class="hero-banner-button hero-banner-active">Баннер 3</button>
+      <button class="hero-banner-button hero-banner-active"><span class="visually-hidden">Баннер 1</span></button>
+      <button class="hero-banner-button hero-banner-active"><span class="visually-hidden">Баннер 2</span></button>
+      <button class="hero-banner-button hero-banner-active"><span class="visually-hidden">Баннер 3</span></button>
       <ul class="hero-banner-list">
         <li class="hero-banner-item">
-          <p>800 м</p>
-          <p>Дальность полета</p>
+          <span class="hero-banner-fact">800 м</span>
+          <span class="hero-banner-fact-description">Дальность полета</span>
         </li>
         <li class="hero-banner-item">
-          <p>50 м</p>
-          <p>Радиус поражения</p>
+          <span class="hero-banner-fact">50 м</span>
+          <span class="hero-banner-fact-description">Радиус поражения</span>
         </li>
       </ul>
     </article>
@@ -123,14 +125,14 @@
     <section class="advantages" id="advantages">
       <h2 class="visually-hidden">Список преимуществ</h2>
       <ul class="advantages-list">
-        <li class="advantages-item">
-          <a class="advanteges-link" href="#delivery">Доставка</a>
+        <li class="advantages-item advantages-item-active">
+          Доставка
         </li>
         <li class="advantages-item">
-          <a class="advanteges-link" href="#guarantee">Гарантия</a>
+          Гарантия
         </li>
         <li class="advantages-item">
-          <a class="advanteges-link" href="#credit">Кредит</a>
+          Кредит
         </li>
       </ul>
       <div class="advatages-block">
@@ -143,7 +145,7 @@
     <section class="special">
       <h2 class="visually-hidden">Специальное предложение</h2>
       <p class="special-text">Доставим редкий товар под заказ</p>
-      <a class="special-link" href="#">i</a>
+      <a class="visually-hidden" href="#">Узнать больше об акции</a>
     </section>
 
     <section class="about">
@@ -188,10 +190,11 @@
   </main>
 
   <footer class="page-footer">
-    <a class="logo" href="">
+    <a class="logo" href="index.html">
       <img src="./img/logo_device_yellow.svg" alt="Логотип device">
     </a>
-    <address class="footer-text text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+
+    <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
 
     <ul class="footer-list">
       <li class="footer-item">
@@ -223,7 +226,7 @@
       </li>
     </ul>
 
-    <a class="footer-text text" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="footer-telefon" href="tel:+78128121212">+7 (812) 812-12-12</a>
     <a class="footer-developer" href="https://htmlacademy.ru/">
       <img src="./img/logo_html_academy_yellow.svg" alt="Разработано HTML Academy">
     </a>
