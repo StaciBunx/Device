@@ -109,8 +109,6 @@ address {
 
 .search-field-group {
   display: flex;
-
-
 }
 
 .search-field-input {
@@ -121,7 +119,7 @@ address {
   line-height: 125%;
   border: 2px solid #000;
   border-radius: 50px 0 0 50px;
-  padding: 0px 0px 0px 16px;
+  padding-left: 16px;
   width: 359px;
   height: 40px;
 }
