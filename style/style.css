@@ -55,13 +55,6 @@ address {
 
 /* Header */
 
-.search-form {
-  color: #000;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
-}
-
 .user-menu-link {
   color: #000;
   text-decoration: none;
@@ -107,6 +100,13 @@ address {
 
 /* Forms */
 
+.search-form {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+}
+
 .search-field-group {
   display: flex;
 }
@@ -141,7 +141,6 @@ address {
   border-radius: 0 50px 50px 0;
   padding: 10px;
   width: 160px;
-  height: 44px
 }
 
 .search-field-group .search-field-input {
@@ -272,4 +271,85 @@ address {
 /* Subscribe */
 .subscribe {
   background-color: #f0f0f0;
+}
+
+/* Catalog */
+
+/* Header */
+.breadcrumbs-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Filter */
+.filter,
+.sort {
+  background-color: #f0f0f0;
+}
+
+.filter-title,
+.sort-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.filter-fieldset-title {
+  font-weight: 700;
+  line-height: 111%;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.filter-button {
+  border: none;
+}
+
+/* Sort */
+.sort-field-select {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Cards */
+
+.card-link {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 111%;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+/* Pagination */
+
+.pagination-button {
+  background-color: #fff;
+  font-size: 16px;
+  border: 3px solid #e5e5e5;
+  width: 760px;
+  height: 55px;
+}
+
+.pagination-list {
+  background-color: #ebebeb;
+  width: 760px;
+  height: 71px;
+  display: flex;
+}
+
+
+.pagination-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 125%;
+  color: inherit;
 }
