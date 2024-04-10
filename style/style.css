@@ -27,12 +27,27 @@ address {
   font-style: normal;
 }
 
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .page {
+  height: 100%;
   color: #444;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 167%;
+}
 
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-main {
+  flex-grow: 1;
 }
 
 .title {
