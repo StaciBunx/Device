@@ -428,16 +428,34 @@ address {
   padding-bottom: 52px;
 }
 
-/* Catalog */
+/* Catalog header */
 
-/* Header */
+.catalog-header {
+  padding: 35px 21px 35px 60px;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
 .breadcrumbs-link {
   text-decoration: none;
   font-size: 16px;
   color: #000;
 }
 
+/* Catalog */
+
+.catalog {
+  background-color: #f0f0f0;
+}
+
+.catalog-content {
+  display: flex;
+}
+
 /* Filter */
+
 .filter,
 .sort {
   background-color: #f0f0f0;
@@ -453,6 +471,12 @@ address {
   color: #000;
 }
 
+.filter {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 25px 60px 0;
+}
+
 .filter-fieldset-title {
   font-weight: 700;
   line-height: 111%;
@@ -465,6 +489,13 @@ address {
 }
 
 /* Sort */
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+}
+
 .sort-field-select {
   border: none;
   background-color: transparent;
@@ -476,6 +507,15 @@ address {
 
 /* Cards */
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #fff;
+  padding: 70px 40px 0px 40px;
+
+}
+
 .card-link {
   text-decoration: none;
   font-weight: 700;
@@ -485,6 +525,14 @@ address {
 }
 
 /* Pagination */
+.pagination-content {
+  box-sizing: border-box;
+  padding: 25px;
+
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: space-between;
+}
 
 .pagination-button {
   background-color: #fff;
@@ -495,12 +543,8 @@ address {
 }
 
 .pagination-list {
-  background-color: #ebebeb;
-  width: 760px;
-  height: 71px;
   display: flex;
 }
-
 
 .pagination-link {
   text-decoration: none;
