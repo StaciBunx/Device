@@ -23,6 +23,12 @@
 }
 
 /* Common */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -72,12 +78,27 @@ address {
 
 .page-header {
   background-image: linear-gradient(to bottom, #ffffff 25px, #ffe17f 25px);
+  padding: 0px 60px 152px;
+}
+
+.header-top {
+  display: flex;
+}
+
+.user-menu-list {
+  display: flex;
+  width: 497px;
 }
 
 .user-menu-link {
   color: #000;
   text-decoration: none;
 }
+
+.page-menu-list {
+  display: flex;
+}
+
 
 .page-menu-link {
   color: #000;
@@ -88,17 +109,46 @@ address {
   text-decoration: none;
 }
 
+
+
 /* Footer */
 .page-footer {
   background-color: #444;
 }
 
+.footer-content {
+  padding: 62px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  width: 239px;
+}
+
+.footer-line {
+  margin-top: 64px;
+}
+
 .footer-address {
+  margin-top: 32px;
   color: #fff;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
+}
+
+.footer-center {
+  width: 444px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-link {
@@ -110,11 +160,29 @@ address {
   text-decoration: none;
 }
 
+.footer-social {
+  display: flex;
+  margin-top: 64px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+
+
 .footer-telefon {
   color: #fff;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
+}
+
+.footer-developer {
+  margin-top: 64px;
+
 }
 
 /* Forms */
@@ -124,6 +192,7 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
+  margin-right: auto;
 }
 
 .search-field-group {
@@ -141,6 +210,7 @@ address {
   padding-left: 16px;
   width: 359px;
   height: 40px;
+  background-color: transparent;
 }
 
 .search-field-input::placeholder {
@@ -217,6 +287,11 @@ address {
 
 /* Promo */
 
+.hero-banner-container {
+  display: flex;
+  gap: 40px;
+}
+
 .hero-banner-fact {
   font-weight: 400;
   font-size: 36px;
@@ -231,6 +306,15 @@ address {
 }
 
 /* Category */
+.category-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-item {
+  width: 160px;
+}
+
 .category-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -241,13 +325,38 @@ address {
 }
 
 /* Advantages */
+.advantages {
+  height: 390px;
+  background-image: linear-gradient(to bottom, #ffffff 100px, #f0f0f0 100px);
+}
+
+.advantages-content {
+  display: flex;
+}
+
+.advantages-list {
+  box-sizing: border-box;
+  width: 287px;
+  height: 320px;
+  border-right: #000 solid 7px;
+  padding: 65px 0;
+}
+
 .advantages-item-active {
   display: inline-block;
   color: #ffe17f;
   background-color: #000;
 }
 
+.advantages-block {
+  padding: 72px 63px 72px 116px;
+}
+
 /* Special */
+.special {
+  background-color: #f0f0f0;
+}
+
 .special-text {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -258,7 +367,14 @@ address {
   color: #000;
 }
 
+/* Info */
+.info-container {
+  display: flex;
+
+}
+
 /* About */
+
 .about-text,
 .contacts-text {
   line-height: 167%;
@@ -290,6 +406,26 @@ address {
 /* Subscribe */
 .subscribe {
   background-color: #f0f0f0;
+}
+
+.subscribe-top {
+  display: flex;
+  padding: 64px 0 114px;
+
+}
+
+.subscribe-title {
+  margin-right: auto;
+}
+
+.subscribe-text {
+  width: 560px;
+}
+
+.subscribe-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 52px;
 }
 
 /* Catalog */
