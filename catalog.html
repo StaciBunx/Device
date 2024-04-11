@@ -11,37 +11,39 @@
 
 <body>
 
-  <header class="page-header">
+  <header class="page-header center">
     <a class="logo" href="index.html">
       <img src="./img/logo_device_black.svg" alt="Логотип device">
     </a>
 
+    <div class="header-top">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="search-field-label" for="search">
+          <span class="visually-hidden">Поиск продуктов по сайту</span>
+        </label>
+        <div class="search-field-group">
+          <input class="search-field-input" type="text" name="search" id="search" placeholder="Текст поиска">
+          <button class="search-field-button" type="submit">Найти</button>
+        </div>
+      </form>
 
-    <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-      <label class="search-field-label" for="search">
-        <span class="visually-hidden">Поиск продуктов по сайту</span>
-      </label>
-      <div class="search-field-group">
-        <input class="search-field-input" type="text" name="search" id="search" placeholder="Текст поиска">
-        <button class="search-field-button" type="submit">Найти</button>
-      </div>
-    </form>
+      <ul class="user-menu-list">
+        <li class="user-menu-item">
+          <a class="visually-hidden" href="#">Коля Петухов</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link logged" href="#">Выйти</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">Сравнить</a>
+        </li>
+        <li class="user-menu-item">
+          <span class="basket-counter">2</span>
+          <a class="user-menu-link" href="#">Корзина</a>
+        </li>
+      </ul>
+    </div>
 
-    <ul class="user-menu-list">
-      <li class="user-menu-item">
-        <a class="user-menu-link" href="#">Коля Петухов</a>
-      </li>
-      <li class="user-menu-item">
-        <a class="user-menu-link logged" href="#">Выйти</a>
-      </li>
-      <li class="user-menu-item">
-        <a class="user-menu-link" href="#">Сравнить</a>
-      </li>
-      <li class="user-menu-item">
-        <span class="basket-counter">2</span>
-        <a class="user-menu-link" href="#">Корзина</a>
-      </li>
-    </ul>
 
     <nav>
       <ul class="page-menu-list">
@@ -230,48 +232,57 @@
 
   </main>
   <footer class="page-footer">
-    <a class="logo" href="index.html">
-      <img src="./img/logo_device_yellow.svg" alt="Логотип device">
-    </a>
-
-    <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-
-    <ul class="footer-list">
-      <li class="footer-item">
-        <a class="footer-link" href="#delivery">Доставка</a>
-      </li>
-      <li class="footer-item">
-        <a class="footer-link" href="#guarantee">Гарантия</a>
-      </li>
-      <li class="footer-item">
-        <a class="footer-link" href="#contacts">Контакты</a>
-      </li>
-    </ul>
-
-    <ul class="footer-social social">
-      <li class="social-item">
-        <a class="social-link" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Facebook</span>
+    <div class="footer-content center">
+      <div class="footer-left">
+        <a class="logo" href="index.html">
+          <img src="./img/logo_device_yellow.svg" alt="Логотип device">
         </a>
-      </li>
-      <li class="social-item">
-        <a class="social-link" href="#">
-          <span class="visually-hidden">Instagram</span>
+
+        <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+        <svg class="footer-line" width="80" height="7" viewBox="0 0 80 7" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M80 0H0V7H80V0Z" fill="#FFC700" />
+        </svg>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="footer-link" href="#delivery">Доставка</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#guarantee">Гарантия</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="footer-social social">
+          <li class="social-item">
+            <a class="social-link" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-right"> <a class="footer-telefon" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-developer" href="https://htmlacademy.ru/">
+          <img src="./img/logo_html_academy_yellow.svg" alt="Разработано HTML Academy">
         </a>
-      </li>
-      <li class="social-item">
-        <a class="social-link" href="#">
-          <span class="visually-hidden">Twitter</span>
-        </a>
-      </li>
-    </ul>
-
-    <a class="footer-telefon" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <a class="footer-developer" href="https://htmlacademy.ru/">
-      <img src="./img/logo_html_academy_yellow.svg" alt="Разработано HTML Academy">
-    </a>
-
-
+      </div>
+    </div>
   </footer>
 
 
