@@ -118,12 +118,66 @@ address {
 
 .user-menu-list {
   display: flex;
+  align-items: center;
   width: 497px;
+  height: 40px;
+}
+
+.user-menu-left {
+  display: flex;
+  margin-right: auto;
+  gap: 28px;
+}
+
+.user-menu-right {
+  display: flex;
+  gap: 28px;
 }
 
 .user-menu-link {
   color: #000;
   text-decoration: none;
+}
+
+.user-menu-login::before {
+  content: url(../img/header-icon-login.svg);
+  width: 13px;
+  height: 13px;
+  margin-right: 9px;
+}
+
+.user-menu-compare::before {
+  content: url(../img/header-icon-compare.svg);
+  width: 13px;
+  height: 13px;
+  margin-right: 9px;
+}
+
+.user-menu-cart {
+  position: relative;
+}
+
+.user-menu-cart::before {
+  content: url(../img/header-icon-cart.svg);
+  width: 13px;
+  height: 13px;
+  margin-right: 9px;
+}
+
+.cart-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: -15px;
 }
 
 .page-menu-list {
@@ -139,6 +193,7 @@ address {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 
 /* Footer */
 .page-footer {

@@ -23,21 +23,23 @@
           <button class="search-field-button" type="submit">Найти</button>
         </div>
       </form>
-
       <ul class="user-menu-list">
-        <li class="user-menu-item">
-          <a class="visually-hidden" href="#">Имя Фамилия</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link" href="#">Войти</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link" href="#">Сравнить</a>
-        </li>
-        <li class="user-menu-item">
-          <span class="basket-counter">2</span>
-          <a class="user-menu-link" href="#">Корзина</a>
-        </li>
+        <div class="user-menu-left">
+          <li class="user-menu-item user-menu-login">
+            <a class="user-menu-link" href="#">Войти</a>
+          </li>
+          <li class="user-menu-item">
+            <a class="visually-hidden" href="#">Имя Фамилия</a>
+          </li>
+        </div>
+        <div class="user-menu-right">
+          <li class="user-menu-item user-menu-compare">
+            <a class="user-menu-link" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu-item">
+            <a class="user-menu-link user-menu-cart" href="#"><span class="cart-counter">2</span> Корзина</a>
+          </li>
+        </div>
       </ul>
     </div>
 
