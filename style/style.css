@@ -281,8 +281,6 @@ address {
   justify-content: end;
 }
 
-
-
 .footer-telefon {
   color: #fff;
   font-weight: 400;
@@ -403,8 +401,6 @@ address {
 /* Slider */
 
 .slider-container {
-  display: flex;
-  gap: 40px;
   position: relative;
 }
 
@@ -413,10 +409,40 @@ address {
   position: absolute;
   display: block;
   width: 1200px;
-  height: 112px;
+  height: 152px;
   top: 0;
   background-color: #ffe17f;
   z-index: -1;
+}
+
+.slider-item {
+  display: flex;
+  position: relative;
+}
+
+.slider-item::after {
+  content: attr(data-number);
+  font-family: Gilroy, Tahoma, sans-serif;
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1.79px;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  right: 48px;
+  z-index: 10;
+}
+
+.slider-image {
+  display: block;
+  min-height: 485px;
+  margin-right: 40px;
+  margin-right: 40px;
+}
+
+.slider-content {
+  width: 560px;
 }
 
 .slider-fact {
