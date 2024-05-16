@@ -12,7 +12,6 @@
     <a class="logo-link" href="index.html">
       <img class="logo" src="./img/logo_device_black.svg" alt="Логотип device">
     </a>
-
     <div class="header-top">
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
         <label class="search-field-label" for="search">
@@ -43,21 +42,37 @@
       </ul>
     </div>
 
-    <nav>
-      <ul class="page-menu-list">
-        <li class="page-menu-item">
-          <a class="page-menu-link" href="catalog.html">Каталог товаров</a>
-          <a class="page-menu-button" href="#">+</a>
+    <nav class="navigation">
+      <ul class="navigation-menu-list">
+        <li class="navigation-menu-item navigation-menu-catalog">
+          <a class="navigation-menu-link" href="catalog.html">Каталог товаров
+
+            <div class="navigation-menu-button">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_62369_923)">
+                  <path d="M16 7.38892H9V0.388916H7V7.38892H0V9.38892H7V16.3889H9V9.38892H16V7.38892Z" fill="black" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_62369_923">
+                    <rect width="16" height="16" fill="white" transform="translate(0 0.388916)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </a>
         </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link" href="#delivery">Доставка</a>
-        </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link" href="#guarantee">Гарантия</a>
-        </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link" href="#">Контакты</a>
-        </li>
+
+        <div class="navigation-menu-right">
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#delivery">Доставка</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#guarantee">Гарантия</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="#">Контакты</a>
+          </li>
+        </div>
       </ul>
     </nav>
   </header>

@@ -116,6 +116,8 @@ address {
   padding: 30px 0;
 }
 
+/* Header User Menu */
+
 .user-menu-list {
   display: flex;
   align-items: center;
@@ -180,12 +182,13 @@ address {
   left: -15px;
 }
 
-.page-menu-list {
+/* Header Navigation */
+
+.navigation-menu-list {
   display: flex;
 }
 
-
-.page-menu-link {
+.navigation-menu-link {
   color: #000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -194,6 +197,34 @@ address {
   text-decoration: none;
 }
 
+.navigation-menu-catalog {
+  display: flex;
+  margin-right: auto;
+  position: relative;
+  cursor: pointer;
+
+}
+
+
+
+.navigation-menu-button {
+  display: flex;
+  width: 50px;
+  height: 51px;
+  border: 2px solid black;
+  border-radius: 100%;
+  opacity: 0.3;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -70px;
+  top: -11px;
+}
+
+.navigation-menu-right {
+  display: flex;
+  gap: 47px;
+}
 
 /* Footer */
 .page-footer {
@@ -318,6 +349,7 @@ address {
   border: 2px solid #000;
   border-radius: 0 50px 50px 0;
   width: 160px;
+  cursor: pointer;
 }
 
 .search-field-group .search-field-input {
