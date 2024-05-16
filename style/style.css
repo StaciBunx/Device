@@ -400,21 +400,33 @@ address {
   height: 57px;
 }
 
-/* Promo */
+/* Slider */
 
-.hero-banner-container {
+.slider-container {
   display: flex;
   gap: 40px;
+  position: relative;
 }
 
-.hero-banner-fact {
+.slider-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1200px;
+  height: 112px;
+  top: 0;
+  background-color: #ffe17f;
+  z-index: -1;
+}
+
+.slider-fact {
   font-weight: 400;
   font-size: 36px;
   line-height: 83%;
   color: #000;
 }
 
-.hero-banner-fact-description {
+.slider-fact-description {
   font-size: 16px;
   line-height: 187%;
 
