@@ -24,15 +24,12 @@
 
 /* Common */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -108,7 +105,7 @@ address {
 
 .page-header {
   background-image: linear-gradient(to bottom, #ffffff 40px, #ffe17f 40px);
-  padding: 18px 60px 152px;
+  padding: 18px 60px 31px;
 }
 
 .header-top {
