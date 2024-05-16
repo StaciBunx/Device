@@ -385,7 +385,7 @@ address {
   position: absolute;
   display: block;
   width: 1160px;
-  height: 152px;
+  height: 84px;
   top: 0;
   background-color: #ffe17f;
   z-index: -1;
@@ -400,11 +400,11 @@ address {
   content: attr(data-number);
   font-size: 180px;
   font-weight: 700;
-  line-height: 17%;
+  line-height: 1;
   letter-spacing: 1.79px;
   color: #fff;
   position: absolute;
-  top: 0px;
+  top: 10px;
   right: 48px;
   z-index: 10;
 }
