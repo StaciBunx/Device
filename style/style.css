@@ -82,7 +82,7 @@ address {
 
 .page-header {
   background-image: linear-gradient(to bottom, #ffffff 40px, #ffe17f 40px);
-  padding: 18px 60px 31px;
+  padding: 18px 60px 0;
 }
 
 .header-top {
@@ -385,7 +385,7 @@ address {
   position: absolute;
   display: block;
   width: 1160px;
-  height: 84px;
+  height: 152px;
   top: 0;
   background-color: #ffe17f;
   z-index: -1;
@@ -404,20 +404,20 @@ address {
   letter-spacing: 1.79px;
   color: #fff;
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 48px;
   z-index: 10;
 }
 
 .slider-image {
   display: block;
-  min-height: 485px;
-  margin-right: 40px;
+  height: 560px;
   margin-right: 40px;
 }
 
 .slider-content {
   width: 560px;
+  padding-top: 123px;
 }
 
 .slider-fact {
