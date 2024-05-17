@@ -394,6 +394,7 @@ address {
 .slider-item {
   display: flex;
   position: relative;
+  justify-content: space-between;
 }
 
 .slider-item::after {
@@ -404,7 +405,7 @@ address {
   letter-spacing: 1.79px;
   color: #fff;
   position: absolute;
-  top: 0;
+  top: 14px;
   right: 48px;
   z-index: 10;
 }
@@ -412,12 +413,16 @@ address {
 .slider-image {
   display: block;
   height: 560px;
-  margin-right: 40px;
 }
 
 .slider-content {
   width: 560px;
   padding-top: 123px;
+  z-index: 20;
+}
+
+.slider-title {
+  z-index: 20;
 }
 
 .slider-fact {
