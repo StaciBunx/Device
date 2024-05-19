@@ -439,6 +439,18 @@ address {
   height: 560px;
 }
 
+.slider-image-controls svg:first-child {
+  position: absolute;
+  top: 211px;
+  left: 30px
+}
+
+.slider-image-controls svg:last-child {
+  position: absolute;
+  top: 211px;
+  left: 560px
+}
+
 .slider-content {
   width: 560px;
   padding-top: 123px;
