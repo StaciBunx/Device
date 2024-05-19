@@ -395,7 +395,24 @@ address {
 
 .slider-controls {
   position: absolute;
+  display: flex;
+  gap: 20px;
+  right: 0;
+  bottom: 173px;
+  z-index: 30;
+}
 
+.slider-control {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.slider-control-active {
+  background-color: #000;
 }
 
 .slider-item {
