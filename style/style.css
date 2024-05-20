@@ -516,6 +516,10 @@ address {
 }
 
 /* Category */
+.category {
+  margin-bottom: 70px;
+}
+
 .category-list {
   display: flex;
   justify-content: space-between;
@@ -525,13 +529,21 @@ address {
   width: 160px;
 }
 
-.category-link {
+.category-link p {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 133%;
   letter-spacing: -0.02em;
   color: #000;
   text-decoration: none;
+}
+
+.category-image {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: #ffe17f;
+  margin-bottom: 32px;
 }
 
 /* Advantages */
