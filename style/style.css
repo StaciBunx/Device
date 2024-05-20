@@ -378,6 +378,10 @@ address {
 
 /* Slider */
 
+.slider {
+  margin-bottom: 70px;
+}
+
 .slider-container {
   position: relative;
 }
