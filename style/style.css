@@ -416,12 +416,16 @@ address {
 }
 
 .slider-item {
+  display: none;
+}
+
+.slider-item-active {
   display: flex;
   position: relative;
   justify-content: space-between;
 }
 
-.slider-item::after {
+.slider-item-active::after {
   content: attr(data-number);
   font-size: 180px;
   font-weight: 700;
