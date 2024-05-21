@@ -64,7 +64,6 @@ address {
 }
 
 .button {
-  display: block;
   font-family: "Raleway", sans-serif;
   color: #000;
   font-weight: 800;
@@ -73,7 +72,7 @@ address {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-
+  cursor: pointer;
 }
 
 .logo {
@@ -557,12 +556,30 @@ address {
 }
 
 .advantages-list {
-  box-sizing: border-box;
-  width: 287px;
+  width: 280px;
   height: 320px;
   border-right: #000 solid 7px;
   padding: 65px 0;
 }
+
+.advantages-button {
+  display: block;
+  background: 0 0;
+  border: none;
+  text-align: center;
+  z-index: 10;
+  width: 160px;
+}
+
+/* font-family: "Raleway", sans-serif;
+color: #000;
+font-weight: 800;
+font-size: 18px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+cursor: pointer; */
 
 .advantages-item-active {
   display: inline-block;
