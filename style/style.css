@@ -64,7 +64,10 @@ address {
 }
 
 .button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   font-family: "Raleway", sans-serif;
   color: #000;
   font-weight: 800;
@@ -72,17 +75,15 @@ address {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
   background: 0 0;
   border: none;
   cursor: pointer;
-  position: relative;
 }
 
 .button::before {
   content: "";
   position: absolute;
-  top: 25%;
+  top: 38%;
   left: 0;
   z-index: -1;
   width: 100%;
@@ -561,25 +562,28 @@ address {
   width: 280px;
   height: 320px;
   border-right: #000 solid 7px;
-  padding: 65px 0;
+  padding: 64px 0;
 }
 
 .advantages-button {
   width: 160px;
-  margin-right: 60px;
-  text-align: center;
+  height: 40px;
+  margin-right: 120px;
+  margin-bottom: 35px;
   z-index: 10;
 }
 
-/* font-family: "Raleway", sans-serif;
-color: #000;
-font-weight: 800;
-font-size: 18px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-text-decoration: none;
-text-align: center;
-cursor: pointer; */
+.advantages-button.active {
+  color: #ffe17f;
+}
+
+.advantages-button.active::before {
+  top: 0;
+  width: 280px;
+  height: 40px;
+  background-color: #000;
+}
+
 
 .advantages-item-active {
   display: inline-block;
