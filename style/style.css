@@ -64,6 +64,7 @@ address {
 }
 
 .button {
+  display: block;
   font-family: "Raleway", sans-serif;
   color: #000;
   font-weight: 800;
@@ -72,7 +73,21 @@ address {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  background: 0 0;
+  border: none;
   cursor: pointer;
+  position: relative;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 8px;
+  background-color: #ffe17f;
 }
 
 .logo {
@@ -476,19 +491,6 @@ address {
   width: 220px;
   height: 40px;
   margin-bottom: 50px;
-  position: relative;
-}
-
-.slider-button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 8px;
-  margin-top: -10px;
-  background-color: #ffe17f;
 }
 
 .slider-details {
@@ -563,12 +565,10 @@ address {
 }
 
 .advantages-button {
-  display: block;
-  background: 0 0;
-  border: none;
+  width: 160px;
+  margin-right: 60px;
   text-align: center;
   z-index: 10;
-  width: 160px;
 }
 
 /* font-family: "Raleway", sans-serif;
