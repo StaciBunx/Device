@@ -598,16 +598,34 @@ address {
 }
 
 .advantage {
+  display: none;
   position: relative;
 }
 
-.advantage::after {
+.advantage.active {
+  display: block;
+}
+
+.advantage.delivery.active::after {
   content: url(../img/advantages-delivery.svg);
   position: absolute;
   top: 4px;
   left: 674px;
 }
 
+.advantage.warranty.active::after {
+  content: url(../img/advantages-warranty.svg);
+  position: absolute;
+  top: 4px;
+  left: 674px;
+}
+
+.advantage.credit.active::after {
+  content: url(../img/advantages-credit.svg);
+  position: absolute;
+  top: 4px;
+  left: 674px;
+}
 
 /* Special */
 .special {
