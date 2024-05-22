@@ -552,6 +552,7 @@ address {
 .advantages {
   height: 390px;
   background-image: linear-gradient(to bottom, #ffffff 100px, #f0f0f0 100px);
+  margin-bottom: 70px;
 }
 
 .advantages-containter {
@@ -630,16 +631,48 @@ address {
 /* Special */
 .special {
   background-color: #f0f0f0;
+  height: 100px;
+  margin-bottom: 70px;
+}
+
+.special {
+  position: relative;
+}
+
+.special::before {
+  content: url(../img/special-delivery.svg);
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  z-index: 10;
+}
+
+.special::after {
+  content: url(../img/special-i.svg);
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  z-index: 10;
+  right: 0;
+  top: 0;
+}
+
+.special-wrapper {
+  height: 100px;
+  display: flex;
+
 }
 
 .special-text {
+  margin: auto;
+  display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-align: center;
   color: #000;
+  text-align: center;
 }
 
 /* Info */
