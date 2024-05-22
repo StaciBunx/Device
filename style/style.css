@@ -554,7 +554,7 @@ address {
   background-image: linear-gradient(to bottom, #ffffff 100px, #f0f0f0 100px);
 }
 
-.advantages-content {
+.advantages-containter {
   display: flex;
 }
 
@@ -584,16 +584,30 @@ address {
   background-color: #000;
 }
 
-
-.advantages-item-active {
-  display: inline-block;
-  color: #ffe17f;
-  background-color: #000;
-}
-
-.advantages-block {
+.advantages-wrapper {
   padding: 72px 63px 72px 116px;
 }
+
+
+.advantage-title {
+  margin-bottom: 35px;
+}
+
+.advantage-text {
+  width: 450px;
+}
+
+.advantage {
+  position: relative;
+}
+
+.advantage::after {
+  content: url(../img/advantages-delivery.svg);
+  position: absolute;
+  top: 4px;
+  left: 674px;
+}
+
 
 /* Special */
 .special {
