@@ -683,9 +683,30 @@ address {
 
 /* About */
 
+.about::before,
+.contacts::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 7px;
+  background-color: #000;
+  margin-bottom: 61px;
+}
+
+.about .title,
+.contacts .title {
+  margin-bottom:
+    48px;
+}
+
 .about-text,
 .contacts-text {
   line-height: 167%;
+}
+
+.about p:first-of-type,
+.contacts p:first-of-type {
+  margin-bottom: 30px;
 }
 
 .about-list-item {
