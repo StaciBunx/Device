@@ -672,21 +672,15 @@ address {
   text-align: center;
 }
 
-/* Info */
+/* Info  - Common styles for About and Contacts*/
 .info-container {
   display: flex;
   margin-bottom: 70px;
 }
 
-/* About */
-
 .about,
 .contacts {
   width: 520px;
-}
-
-.about {
-  margin-right: auto;
 }
 
 .about::before,
@@ -710,15 +704,21 @@ address {
   line-height: 167%;
 }
 
-/* .about p:first-of-type,
-.contacts p:first-of-type {
-  margin-bottom: 30px;
-} */
-
 .about-container,
 .contacts-container {
   display: grid;
   gap: 30px;
+}
+
+.about-button,
+.contacts-button {
+  width: 270px;
+}
+
+/* About */
+
+.about {
+  margin-right: auto;
 }
 
 .about-list-item {
@@ -732,12 +732,8 @@ address {
   letter-spacing: -0.02em;
 }
 
-.about-button,
-.contacts-button {
-  width: 270px;
-}
-
 /* Contacts */
+
 .contacts-title {
   font-weight: 700;
   font-size: 24px;
@@ -750,6 +746,7 @@ address {
 }
 
 /* Subscribe */
+
 .subscribe {
   background-color: #f0f0f0;
 }
