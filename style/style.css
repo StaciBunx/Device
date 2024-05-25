@@ -633,9 +633,6 @@ address {
   background-color: #f0f0f0;
   height: 100px;
   margin-bottom: 70px;
-}
-
-.special {
   position: relative;
 }
 
@@ -678,10 +675,19 @@ address {
 /* Info */
 .info-container {
   display: flex;
-
+  margin-bottom: 70px;
 }
 
 /* About */
+
+.about,
+.contacts {
+  width: 520px;
+}
+
+.about {
+  margin-right: auto;
+}
 
 .about::before,
 .contacts::before {
@@ -704,9 +710,15 @@ address {
   line-height: 167%;
 }
 
-.about p:first-of-type,
+/* .about p:first-of-type,
 .contacts p:first-of-type {
   margin-bottom: 30px;
+} */
+
+.about-container,
+.contacts-container {
+  display: grid;
+  gap: 30px;
 }
 
 .about-list-item {
@@ -718,6 +730,11 @@ address {
   font-weight: 700;
   line-height: 111%;
   letter-spacing: -0.02em;
+}
+
+.about-button,
+.contacts-button {
+  width: 270px;
 }
 
 /* Contacts */
