@@ -738,6 +738,7 @@ address {
   font-weight: 700;
   font-size: 24px;
   line-height: 125%;
+  margin-bottom: 15px;
 }
 
 .contacts-telefon {
@@ -758,6 +759,7 @@ address {
 }
 
 .subscribe-title {
+  width: 350px;
   margin-right: auto;
 }
 
@@ -766,9 +768,21 @@ address {
 }
 
 .subscribe-bottom {
+  width: 1158px;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   padding-bottom: 52px;
+  position: relative;
+}
+
+.subscribe-note::before {
+  content: url("../img/icon-tick-big.svg");
+  /* margin-right: 17px; */
+  position: absolute;
+  top: 15px;
+  right: 143px;
+
 }
 
 /* Catalog header */
