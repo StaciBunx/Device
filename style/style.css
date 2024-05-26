@@ -221,30 +221,21 @@ address {
 
 .footer-content {
   padding: 62px 0;
-  display: flex;
-  justify-content: space-between;
 }
 
-.footer-left {
-  width: 239px;
-  position: relative;
+.footer-logo {
+  margin-bottom: 35px;
 }
 
-.footer-left::after {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 7px;
-  background-color: #ffc700;
-  top: 163px;
-}
-
-.footer-line {
-  margin-top: 64px;
+.footer-center-row {
+  display: grid;
+  grid-template-columns: 1fr 444px 1fr;
+  align-items: center;
+  margin-bottom: 47px;
 }
 
 .footer-address {
-  margin-top: 32px;
+  width: 239px;
   color: #fff;
   font-style: normal;
   font-weight: 400;
@@ -252,14 +243,15 @@ address {
   line-height: 125%;
 }
 
-.footer-center {
-  width: 444px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+.footer-telefon {
+  display: block;
+  text-align: end;
+  text-decoration: underline;
+
 }
 
 .footer-list {
+  width: 444px;
   display: flex;
   justify-content: space-between;
 }
@@ -273,15 +265,33 @@ address {
   text-decoration: none;
 }
 
-.footer-social {
-  display: flex;
-  margin-top: 64px;
+.footer-bottom-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 150px 1fr;
+
 }
 
-.footer-right {
+.footer-bottom-row::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc700;
+  top: 18px;
+  left: 0;
+}
+
+.footer-social {
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-telefon {
@@ -291,9 +301,14 @@ address {
   line-height: 125%;
 }
 
-.footer-developer {
-  margin-top: 64px;
+.footer-developed {
+  /* margin-top: 64px; */
+  /* margin-left: auto; */
+  margin-left: 390px;
+}
 
+.wrapper {
+  width: 80px;
 }
 
 /* Forms */
@@ -559,6 +574,7 @@ address {
 }
 
 /* Advantages */
+
 .advantages {
   height: 390px;
   background-image: linear-gradient(to bottom, #ffffff 100px, #f0f0f0 100px);
@@ -639,6 +655,7 @@ address {
 }
 
 /* Special */
+
 .special {
   background-color: #f0f0f0;
   height: 100px;
@@ -683,6 +700,7 @@ address {
 }
 
 /* Info  - Common styles for About and Contacts*/
+
 .info-container {
   display: flex;
   margin-bottom: 70px;
