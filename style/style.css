@@ -99,7 +99,7 @@ address {
 
 .page-header {
   background-image: linear-gradient(to bottom, #ffffff 40px, #ffe17f 40px);
-  padding: 18px 60px 0;
+  padding: 18px 60px 38px;
 }
 
 .header-top {
@@ -431,7 +431,7 @@ address {
   position: absolute;
   display: block;
   width: 1160px;
-  height: 152px;
+  height: 114px;
   top: 0;
   background-color: #ffe17f;
   z-index: -1;
@@ -477,7 +477,7 @@ address {
   letter-spacing: 1.79px;
   color: #fff;
   position: absolute;
-  top: 14px;
+  top: -24px;
   right: 48px;
   z-index: 10;
 }
@@ -489,19 +489,19 @@ address {
 
 .slider-image-controls svg:first-child {
   position: absolute;
-  top: 211px;
+  top: 173px;
   left: 30px
 }
 
 .slider-image-controls svg:last-child {
   position: absolute;
-  top: 211px;
+  top: 173px;
   left: 560px
 }
 
 .slider-content {
   width: 560px;
-  padding-top: 123px;
+  padding-top: 85px;
   z-index: 20;
 }
 
