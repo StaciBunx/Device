@@ -485,6 +485,8 @@ address {
 .slider-image {
   display: block;
   height: 560px;
+  position: absolute;
+  top: -38px;
 }
 
 .slider-image-controls svg:first-child {
