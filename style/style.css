@@ -931,13 +931,9 @@ address {
 }
 
 /* Pagination */
-.pagination-content {
-  box-sizing: border-box;
-  padding: 25px;
 
-  background-color: #ebebeb;
-  display: flex;
-  justify-content: space-between;
+.pagination {
+  padding-bottom: 78px;
 }
 
 .pagination-button {
@@ -956,8 +952,45 @@ address {
   cursor: pointer;
 }
 
-.pagination-list {
+.pagination-container {
+  padding: 25px;
+  background-color: #ebebeb;
   display: flex;
+  position: relative;
+}
+
+.pagination-control {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.pagination-control.back {
+  position: absolute;
+}
+
+.pagination-control.forward {
+  position: absolute;
+  right: 25px;
+}
+
+.pagination-list {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: #444;
+  opacity: 0.3;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 .pagination-link {
