@@ -897,6 +897,20 @@ address {
   line-height: inherit;
 }
 
+.sort-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.sort-button.up {
+  background-image: url("../img/sort-button-up.svg");
+}
+
+.sort-button.down {
+  background-image: url("../img/sort-button-down.svg");
+}
+
 /* Cards */
 
 .cards {
