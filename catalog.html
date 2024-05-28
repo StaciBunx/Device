@@ -117,17 +117,15 @@
 
             <fieldset class="filter-fieldset">
               <legend class="filter-fieldset-title">Стоимость</legend>
-              <div class="range-slider">
-                <div class="slider-bar">
-                  <button class="slider-button" type="button">
-                    <span class="visually-hidden">Ручка минимальной цены</span>
-                  </button>
-                  <button class="slider-button" type="button">
-                    <span class="visually-hidden">Ручка максимальной цены</span>
-                  </button>
-                </div>
-                <span class="range-text">от 0</span>
-                <span class="range-text">до 5000</span>
+              <div class="filter-range">
+                <label class="filter-label">от 0 <input class="filter-input" type="number" name="min-price"></label>
+                <label class="filter-label">до 5000 <input class="filter-input" type="number" name="max-price"></label>
+                <button class="range-toggle-min">
+                  <span class="visually-hidden">Ручка минимальной цены</span>
+                </button>
+                <button class="range-toggle-max">
+                  <span class="visually-hidden">Ручка максмальной цены</span>
+                </button>
               </div>
             </fieldset>
 
