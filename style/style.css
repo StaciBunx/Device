@@ -68,16 +68,10 @@ address {
   justify-content: center;
   align-items: center;
   position: relative;
-  font-family: "Raleway", sans-serif;
-  color: #000;
-  font-weight: 800;
-  font-size: 18px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-decoration: none;
   background: 0 0;
   border: none;
   cursor: pointer;
+  position: relative
 }
 
 .button::before {
@@ -85,10 +79,21 @@ address {
   position: absolute;
   top: 38%;
   left: 0;
-  z-index: -1;
+  /* z-index: -1; */
   width: 100%;
   height: 8px;
   background-color: #ffe17f;
+}
+
+.button span {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .logo {
@@ -845,7 +850,7 @@ address {
 
 .filter,
 .sort {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
 }
 
 .filter-title,
@@ -872,7 +877,8 @@ address {
 }
 
 .filter-button {
-  border: none;
+  width: 220px;
+  height: 40px;
 }
 
 /* Sort */
