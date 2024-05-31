@@ -63,6 +63,11 @@ address {
   line-height: 100%;
 }
 
+.title::selection {
+  color: #ffe17f;
+  background: #000
+}
+
 .button {
   display: flex;
   justify-content: center;
