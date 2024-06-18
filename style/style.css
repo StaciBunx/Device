@@ -16,6 +16,10 @@ li {
   list-style-type: none;
 }
 
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -99,9 +103,30 @@ address {
   text-decoration: none;
 }
 
-.logo {
-  display: block;
+.logo-link {
+  display: grid;
+  place-content: center;
+  width: 149px;
+  height: 40px;
+  outline: 2px solid transparent;
+
+  /* outline: 2px solid #af4fff; */
+
 }
+
+.logo-link:focus:not(:active) {
+  outline-color: #af4fff;
+}
+
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}
+
 
 /* Header */
 
