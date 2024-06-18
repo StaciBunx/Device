@@ -109,15 +109,11 @@ address {
   width: 149px;
   height: 40px;
   outline: 2px solid transparent;
-
-  /* outline: 2px solid #af4fff; */
-
 }
 
 .logo-link:focus:not(:active) {
   outline-color: #af4fff;
 }
-
 
 .logo-link:hover {
   opacity: 0.6;
