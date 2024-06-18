@@ -156,6 +156,18 @@ address {
   gap: 28px;
 }
 
+.user-menu-item:hover {
+  opacity: 0.6;
+}
+
+.user-menu-item:active {
+  opacity: 0.3;
+}
+
+.user-menu-item:focus:not(:active) {
+  outline: 2px solid #af4fff;
+}
+
 .user-menu-link {
   color: #000;
   text-decoration: none;
