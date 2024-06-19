@@ -198,11 +198,9 @@ address {
 }
 
 .user-menu-cart::before {
-  content: "";
+  content: url(../img/header-icon-cart.svg);
   position: absolute;
   left: 17px;
-  top: 10px;
-  background-image: url(../img/header-icon-cart.svg);
   width: 16px;
   height: 14px;
 }
@@ -219,7 +217,7 @@ address {
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: 2px;
 }
 
