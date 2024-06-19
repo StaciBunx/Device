@@ -148,29 +148,35 @@ address {
 .user-menu-left {
   display: flex;
   margin-right: auto;
-  gap: 28px;
+  gap: 18px;
 }
 
 .user-menu-right {
   display: flex;
-  gap: 28px;
-}
-
-.user-menu-item:hover {
-  opacity: 0.6;
-}
-
-.user-menu-item:active {
-  opacity: 0.3;
-}
-
-.user-menu-item:focus:not(:active) {
-  outline: 2px solid #af4fff;
+  gap: 18px;
 }
 
 .user-menu-link {
   color: #000;
-  text-decoration: none;
+  padding: 7px 5px;
+  outline: 2px solid transparent;
+}
+
+.user-menu-cart {
+  padding-left: 45px;
+  padding-right: 10px;
+}
+
+.user-menu-link:hover {
+  opacity: 0.6;
+}
+
+.user-menu-link:active {
+  opacity: 0.3;
+}
+
+.user-menu-link:focus:not(:active) {
+  outline-color: #af4fff;
 }
 
 .user-menu-login::before {
@@ -192,10 +198,13 @@ address {
 }
 
 .user-menu-cart::before {
-  content: url(../img/header-icon-cart.svg);
-  width: 13px;
-  height: 13px;
-  margin-right: 9px;
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 10px;
+  background-image: url(../img/header-icon-cart.svg);
+  width: 16px;
+  height: 14px;
 }
 
 .cart-counter {
@@ -210,8 +219,8 @@ address {
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
-  top: 0;
-  left: -15px;
+  top: 9px;
+  left: 2px;
 }
 
 /* Header Navigation */
