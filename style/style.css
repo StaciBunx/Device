@@ -233,33 +233,34 @@ address {
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
-.navigation-menu-catalog {
-  display: flex;
-  margin-right: auto;
-  position: relative;
+.navigation-menu-item {
+  /* display: flex; */
+  /* position: relative; */
   cursor: pointer;
 }
 
-.navigation-menu-button {
-  display: flex;
-  width: 50px;
-  height: 51px;
-  border: 2px solid black;
-  border-radius: 100%;
-  opacity: 0.3;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: -70px;
-  top: -11px;
+.navigation-menu-catalog {
+  position: relative;
 }
+
+.navigation-menu-button {
+  position: absolute;
+  left: 243px;
+  top: calc((100% - 50px)/2);
+  opacity: 0.3;
+}
+
+.navigation-menu-button:hover {
+  opacity: 1;
+}
+
 
 .navigation-menu-right {
   display: flex;
   gap: 47px;
+  margin-left: auto;
 }
 
 /* Footer */
