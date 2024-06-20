@@ -227,22 +227,21 @@ address {
   display: flex;
 }
 
+.navigation-menu-item-catalog {
+  position: relative;
+}
+
 .navigation-menu-link {
   color: #000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  outline: 2px solid transparent;
 }
 
-.navigation-menu-item {
-  /* display: flex; */
-  /* position: relative; */
-  cursor: pointer;
-}
-
-.navigation-menu-catalog {
-  position: relative;
+.navigation-catalog {
+  padding: 15px 70px 17px 2px;
 }
 
 .navigation-menu-button {
@@ -250,12 +249,17 @@ address {
   left: 243px;
   top: calc((100% - 50px)/2);
   opacity: 0.3;
+  cursor: pointer;
 }
 
-.navigation-menu-button:hover {
+.navigation-menu-item:hover .navigation-menu-button {
   opacity: 1;
 }
 
+
+.navigation-menu-link:focus:not(:active) {
+  outline-color: #af4fff;
+}
 
 .navigation-menu-right {
   display: flex;
