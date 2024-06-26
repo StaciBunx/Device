@@ -256,6 +256,13 @@ address {
   opacity: 1;
 }
 
+.navigation-menu-item:hover .navigation-menu-link {
+  opacity: 0.6;
+}
+
+.navigation-menu-item:active .navigation-menu-link {
+  opacity: 0.3;
+}
 
 .navigation-menu-link:focus:not(:active) {
   outline-color: #af4fff;
