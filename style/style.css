@@ -636,9 +636,45 @@ address {
 
 .category-item {
   width: 160px;
+  height: 253px;
 }
 
-.category-link p {
+.category-link {
+  display: block;
+  position: relative;
+  height: 160px;
+  background-color: #ffe17f;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.category-link.vr {
+  background-image: url("../img/category-images-1.svg");
+}
+
+.category-link.monopods {
+  background-image: url("../img/category-images-2.svg");
+}
+
+.category-link.action-cameras {
+  background-image: url("../img/category-images-3.svg");
+}
+
+.category-link.fitness-band {
+  background-image: url("../img/category-images-4.svg");
+}
+
+.category-link.smart-watch {
+  background-image: url("../img/category-images-5.svg");
+}
+
+.category-link.drones {
+  background-image: url("../img/category-images-6.svg");
+}
+
+.category-link span {
+  position: absolute;
+  top: 192px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 133%;
@@ -647,13 +683,7 @@ address {
   text-decoration: none;
 }
 
-.category-image {
-  display: block;
-  width: 160px;
-  height: 160px;
-  background-color: #ffe17f;
-  margin-bottom: 32px;
-}
+
 
 /* Advantages */
 
