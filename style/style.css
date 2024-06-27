@@ -637,6 +637,8 @@ address {
 .category-item {
   width: 160px;
   height: 253px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .category-link {
@@ -683,7 +685,21 @@ address {
   text-decoration: none;
 }
 
+.category-link:focus {
+  outline: none;
+}
 
+.category-item:hover .category-link {
+  background-color: #ffc700;
+}
+
+.category-item:active .category-link {
+  opacity: 0.3;
+}
+
+.category-item:focus-within {
+  outline-color: #af4fff;
+}
 
 /* Advantages */
 
