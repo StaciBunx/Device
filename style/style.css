@@ -106,6 +106,10 @@ address {
   text-decoration: none;
 }
 
+.button:focus-visible {
+  outline-color: #af4fff;
+}
+
 .button:hover::before {
   top: 0;
   height: 40px;
@@ -113,10 +117,6 @@ address {
 
 .button:active::before {
   background-color: #ffc700;
-}
-
-.button:focus:not(:active) {
-  outline-color: #af4fff;
 }
 
 .button:disabled {
@@ -131,7 +131,7 @@ address {
   outline: 2px solid transparent;
 }
 
-.logo-link:focus:not(:active) {
+.logo-link:focus-visible {
   outline-color: #af4fff;
 }
 
@@ -187,16 +187,16 @@ address {
   padding-right: 10px;
 }
 
+.user-menu-link:focus-visible {
+  outline-color: #af4fff;
+}
+
 .user-menu-link:hover {
   opacity: 0.6;
 }
 
 .user-menu-link:active {
   opacity: 0.3;
-}
-
-.user-menu-link:focus:not(:active) {
-  outline-color: #af4fff;
 }
 
 .user-menu-login::before {
@@ -272,6 +272,10 @@ address {
   cursor: pointer;
 }
 
+.navigation-menu-link:focus-visible {
+  outline-color: #af4fff;
+}
+
 .navigation-menu-item:hover .navigation-menu-button {
   opacity: 1;
 }
@@ -284,9 +288,6 @@ address {
   opacity: 0.3;
 }
 
-.navigation-menu-link:focus:not(:active) {
-  outline-color: #af4fff;
-}
 
 .navigation-menu-right {
   display: flex;
