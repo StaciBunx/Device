@@ -625,6 +625,7 @@ address {
 }
 
 /* Category */
+
 .category {
   margin-bottom: 70px;
 }
@@ -732,12 +733,31 @@ address {
   color: #ffe17f;
 }
 
+.advantage-button.active:focus .button {
+  outline: none;
+}
+
 .advantages-button.active::before {
   top: 0;
   width: 280px;
   height: 40px;
   background-color: #000;
+  outline: 2px solid none;
+  outline-offset: 2px;
 }
+
+.advantages-button.active:focus-visible::before {
+  outline-color: #af4fff;
+}
+
+.advantages-button:hover span {
+  color: rgba(255, 225, 127, 0.5);
+}
+
+.advantages-button:active span {
+  color: rgba(255, 225, 127, 0.3);
+}
+
 
 .advantages-wrapper {
   padding: 72px 63px 72px 116px;
