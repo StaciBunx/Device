@@ -568,7 +568,7 @@ address {
 .slider-controls {
   position: absolute;
   display: flex;
-  gap: 20px;
+  gap: 16px;
   right: 0;
   bottom: 173px;
   z-index: 30;
