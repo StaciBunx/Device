@@ -617,16 +617,37 @@ address {
   top: -38px;
 }
 
-.slider-image-controls svg:first-child {
+.slider-image-control {
+  border: none;
+  height: 60px;
+  background-color: transparent;
+  outline: 1px solid transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-image-control.left {
   position: absolute;
   top: 173px;
   left: 30px
 }
 
-.slider-image-controls svg:last-child {
+.slider-image-control.right {
   position: absolute;
   top: 173px;
   left: 560px
+}
+
+.slider-image-control:focus-visible {
+  outline-color: #af4fff;
+}
+
+.slider-image-control:hover {
+  opacity: 0.6;
+}
+
+.slider-image-control:active {
+  opacity: 0.3;
 }
 
 .slider-content {
