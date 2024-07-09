@@ -811,28 +811,38 @@ address {
   position: relative;
 }
 
-.special::before {
-  content: url(../img/special-delivery.svg);
-  position: absolute;
-  width: 125px;
-  height: 100px;
-  z-index: 10;
-}
-
-.special::after {
-  content: url(../img/special-i.svg);
-  position: absolute;
-  width: 125px;
-  height: 100px;
-  z-index: 10;
-  right: 0;
-  top: 0;
-}
-
 .special-wrapper {
   height: 100px;
   display: flex;
+}
 
+.special-icon-wrapper {
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  background-color: #ffe17f;
+  background-image: url(../img/special-delivery-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+.special-more-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: absolute;
+  background-color: rgba(220, 220, 220, 0.5);
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  right: 42px;
+  top: 30px;
+}
+
+.special:hover .special-icon-wrapper {
+  background-color: #ffc700;
 }
 
 .special-text {
