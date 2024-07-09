@@ -725,17 +725,17 @@ address {
 .advantages-button {
   width: 160px;
   height: 40px;
-  margin-right: 120px;
   margin-bottom: 35px;
   z-index: 10;
 }
 
-.advantages-button.active span {
-  color: #ffe17f;
+.advantages-button.active {
+  width: 280px;
+  padding-right: 120px;
 }
 
-.advantage-button.active:focus .button {
-  outline: none;
+.advantages-button.active span {
+  color: #ffe17f;
 }
 
 .advantages-button.active::before {
@@ -755,10 +755,9 @@ address {
   color: rgba(255, 225, 127, 0.5);
 }
 
-.advantages-button:active span {
+.advantages-button.active:active span {
   color: rgba(255, 225, 127, 0.3);
 }
-
 
 .advantages-wrapper {
   padding: 72px 63px 72px 116px;
