@@ -751,7 +751,7 @@ address {
   outline-color: #af4fff;
 }
 
-.advantages-button:hover span {
+.advantages-button.active:hover span {
   color: rgba(255, 225, 127, 0.5);
 }
 
