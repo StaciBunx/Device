@@ -805,9 +805,14 @@ address {
 /* Special */
 
 .special {
-  background-color: #f0f0f0;
-  height: 100px;
   margin-bottom: 70px;
+}
+
+.special-link {
+  background-color: #f0f0f0;
+  display: block;
+  height: 100px;
+  outline: 2px solid transparent;
   position: relative;
 }
 
@@ -841,8 +846,21 @@ address {
   top: 30px;
 }
 
-.special:hover .special-icon-wrapper {
+.special-link:focus-visible {
+  outline-color: #af4fff;
+  outline-offset: 2px;
+}
+
+.special-link:hover .special-icon-wrapper {
   background-color: #ffc700;
+}
+
+.special-link:hover g {
+  opacity: 1;
+}
+
+.special-link:active {
+  opacity: 0.3;
 }
 
 .special-text {
