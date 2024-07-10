@@ -1311,13 +1311,16 @@ address {
 }
 
 .pagination-container {
-  padding: 25px;
+  height: 71px;
   background-color: #ebebeb;
   display: flex;
   position: relative;
 }
 
 .pagination-control {
+  display: inline-block;
+  height: 71px;
+  padding: 25px;
   font-family: "Raleway", sans-serif;
   color: #000;
   font-weight: 800;
@@ -1325,16 +1328,27 @@ address {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   z-index: 10;
-}
-
-.pagination-control.back {
   position: absolute;
+  outline: 2px solid transparent;
 }
 
 .pagination-control.forward {
-  position: absolute;
-  right: 25px;
+  right: 0;
 }
+
+.pagination-control:focus-visible {
+  outline-color: #af4fff;
+  outline-offset: 2px;
+}
+
+.pagination-control:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-control:active span {
+  opacity: 0.3;
+}
+
 
 .pagination-list {
   width: 200px;
