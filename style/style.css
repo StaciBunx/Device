@@ -326,7 +326,7 @@ address {
   font-size: 16px;
   line-height: 125%;
   text-decoration: underline;
-  outline: 1px solid transparent;
+  outline: 2px solid transparent;
 }
 
 .footer-telefon:focus-visible {
@@ -354,7 +354,7 @@ address {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding-bottom: 4px;
-  outline: 1px solid transparent;
+  outline: 2px solid transparent;
 }
 
 .footer-link:focus-visible {
@@ -398,7 +398,7 @@ address {
   display: block;
   width: 40px;
   height: 40px;
-  outline: 1px solid transparent;
+  outline: 2px solid transparent;
 }
 
 .social-link:focus-visible {
@@ -416,7 +416,7 @@ address {
 
 .footer-developed {
   margin-left: 390px;
-  outline: 1px solid transparent;
+  outline: 2px solid transparent;
 }
 
 .footer-developed:focus-visible {
@@ -465,7 +465,7 @@ address {
 }
 
 .search-field-input:focus {
-  outline: none;
+  outline: transparent;
 }
 
 .search-field-input::placeholder {
@@ -520,7 +520,7 @@ address {
   width: 557px;
   height: 55px;
   padding: 0px 0px 0px 16px;
-  outline: none;
+  outline: transparent;
 
 }
 
@@ -578,7 +578,7 @@ address {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  outline: 1px solid transparent;
+  outline: 2px solid transparent;
 }
 
 .slider-control {
@@ -641,7 +641,7 @@ address {
   border: none;
   height: 60px;
   background-color: transparent;
-  outline: 1px solid transparent;
+  outline: 2px solid transparent;
   cursor: pointer;
   z-index: 10;
 }
@@ -775,7 +775,7 @@ address {
 }
 
 .category-link:focus {
-  outline: none;
+  outline: transparent;
 }
 
 .category-item:hover .category-link {
@@ -1203,7 +1203,7 @@ address {
 
 .card-link {
   display: block;
-  outline: 1px solid transparent;
+  outline: 2px solid transparent;
 }
 
 .card-image {
@@ -1271,7 +1271,6 @@ address {
   display: flex;
 }
 
-
 .card-link:active .card-button::before {
   background-color: #ffc700;
 }
@@ -1295,6 +1294,20 @@ address {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   cursor: pointer;
+  outline: 2px solid transparent;
+}
+
+.pagination-button:focus-visible {
+  outline-color: #af4fff;
+  outline-offset: 2px;
+}
+
+.pagination-button:hover {
+  border-color: #000;
+}
+
+.pagination-button:active {
+  opacity: 0.3;
 }
 
 .pagination-container {
