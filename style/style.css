@@ -1349,10 +1349,10 @@ address {
   opacity: 0.3;
 }
 
-
 .pagination-list {
   width: 200px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-weight: 400;
   font-size: 16px;
@@ -1362,10 +1362,16 @@ address {
   opacity: 0.3;
   margin-right: auto;
   margin-left: auto;
-
 }
 
+.pagination-item {}
+
 .pagination-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 125%;
   color: inherit;
