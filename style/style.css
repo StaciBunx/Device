@@ -1354,17 +1354,9 @@ address {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
-  text-align: center;
-  color: #444;
-  opacity: 0.3;
   margin-right: auto;
   margin-left: auto;
 }
-
-.pagination-item {}
 
 .pagination-link {
   width: 40px;
@@ -1372,7 +1364,30 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  outline: 2px solid transparent;
+}
+
+.pagination-link span {
+  font-weight: 400;
   font-size: 16px;
   line-height: 125%;
-  color: inherit;
+  color: #444;
+  opacity: 0.3;
+}
+
+.pagination-link.current span {
+  opacity: 0.6;
+}
+
+.pagination-link:focus-within {
+  outline-color: #af4fff;
+}
+
+.pagination-link:hover {
+  opacity: 1;
+}
+
+.pagination-link:active {
+  opacity: 0.1;
 }
