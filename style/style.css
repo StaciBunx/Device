@@ -1085,14 +1085,24 @@ address {
   padding: 35px 21px 35px 60px;
 }
 
+.catalog-title {
+  margin-bottom: 16px;
+}
+
 .breadcrumbs {
   display: flex;
+  height: 19px;
+  align-items: center;
+  gap: 36px;
 }
 
 .breadcrumbs-link {
-  text-decoration: none;
   font-size: 16px;
   color: #000;
+}
+
+.breadcrumbs-item {
+  position: relative;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -1100,7 +1110,9 @@ address {
   width: 4px;
   height: 7px;
   opacity: 0.3;
-  padding: 0 16px;
+  position: absolute;
+  right: -20px;
+  bottom: 25px;
 }
 
 /* Catalog */
@@ -1116,9 +1128,7 @@ address {
 /* Filter */
 
 .filter,
-.sort {
-  /* background-color: #f0f0f0; */
-}
+.sort {}
 
 .filter-title,
 .sort-title {
