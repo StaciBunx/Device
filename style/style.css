@@ -1201,6 +1201,11 @@ address {
   position: relative;
 }
 
+.card-link {
+  display: block;
+  outline: 1px solid transparent;
+}
+
 .card-image {
   margin-bottom: 32px;
 }
@@ -1223,7 +1228,7 @@ address {
 }
 
 .card-button {
-  display: flex;
+  display: none;
   height: 40px;
   width: 220px;
   justify-content: center;
@@ -1253,6 +1258,23 @@ address {
   text-transform: uppercase;
 }
 
+.card-link:focus-visible {
+  outline-color: #af4fff;
+  outline-offset: 2px;
+}
+
+.card-link:hover .card-wrapper {
+  opacity: 0.6;
+}
+
+.card-link:hover .card-button {
+  display: flex;
+}
+
+
+.card-link:active .card-button::before {
+  background-color: #ffc700;
+}
 
 /* Pagination */
 
