@@ -160,9 +160,9 @@ address {
 
 .user-menu-list {
   display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-columns: max-content 1fr auto auto;
   align-items: center;
-  text-align: right;
+  gap: 18px;
   width: 497px;
   height: 40px;
 }
@@ -195,6 +195,10 @@ address {
 
 .user-menu-logout {
   display: none;
+}
+
+.user-menu-logout-active {
+  opacity: 0.3;
 }
 
 .user-menu-compare::before {
