@@ -284,6 +284,15 @@ address {
   opacity: 0.3;
 }
 
+.navigation-menu-item-subcatalog {
+  display: none;
+}
+
+.navigation-menu-item:focus-within .navigation-menu-item-subcatalog {
+  display: block;
+}
+
+
 .navigation-menu-right {
   display: flex;
   gap: 47px;
