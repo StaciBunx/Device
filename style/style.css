@@ -285,7 +285,6 @@ address {
   opacity: 0.3;
 }
 
-
 .navigation-menu-right {
   display: flex;
   gap: 47px;
@@ -293,6 +292,7 @@ address {
 }
 
 /* Footer */
+
 .page-footer {
   background-color: #444;
 }
@@ -1093,6 +1093,14 @@ address {
   text-decoration: none;
   font-size: 16px;
   color: #000;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: url(../img/catalog-breadcrumbs.svg);
+  width: 4px;
+  height: 7px;
+  opacity: 0.3;
+  padding: 0 16px;
 }
 
 /* Catalog */
