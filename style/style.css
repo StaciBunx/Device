@@ -166,6 +166,10 @@ address {
   height: 40px;
 }
 
+.user-menu-item {
+  position: relative;
+}
+
 .user-menu-link {
   color: #000;
   padding: 7px 5px;
@@ -291,7 +295,6 @@ address {
 .navigation-menu-item:focus-within .navigation-menu-item-subcatalog {
   display: block;
 }
-
 
 .navigation-menu-right {
   display: flex;
@@ -1399,4 +1402,107 @@ address {
 
 .pagination-link:active {
   opacity: 0.1;
+}
+
+/* Popover */
+
+.popover {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: -60px;
+  z-index: 30;
+  width: 320px;
+  background-color: #000;
+  min-height: 190px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.user-menu-item:hover .popover {
+  display: block;
+}
+
+.popover::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/popover-triangle.svg);
+  top: -6px;
+  height: 7px;
+  width: 14px;
+  left: calc(50% - 7px);
+}
+
+.popover-content {
+  height: 100%;
+  display: grid;
+}
+
+.cart-item-list {
+  grid-column: 1/-1;
+}
+
+.cart-item {
+  display: grid;
+  padding: 20px 20px;
+  grid-template-columns: 39px 1fr 10px;
+  column-gap: 23px;
+}
+
+.cart-item-title {
+  grid-column: 2/3;
+}
+
+.cart-item-button {
+  grid-column: -2/-1;
+  background-color: transparent;
+  border: none;
+  width: 10px;
+  height: 10px;
+}
+
+.cart-summary {
+  grid-column: 1/-1;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  grid-template-columns: 50% 50%;
+  background-color: #1a1a1a;
+  padding: 0 20px;
+}
+
+.cart-cost {
+  justify-self: end;
+}
+
+.cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #fff;
+  margin: 20px 20px;
+  grid-column: 1/-1;
+  outline: 2px solid transparent;
+}
+
+.cart-button span {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.cart-button:focus-visible {
+  outline-color: #af4fff;
+}
+
+.cart-button:active span {
+  opacity: 0.3;
 }
