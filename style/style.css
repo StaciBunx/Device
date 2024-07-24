@@ -270,15 +270,21 @@ address {
   top: calc((100% - 50px)/2);
   opacity: 0.3;
   cursor: pointer;
+  z-index: 40;
+}
+
+.navigation-menu-button.plus {
+  display: block;
+}
+
+.navigation-menu-button.minus {
+  display: none;
 }
 
 .navigation-menu-link:focus-visible {
   outline-color: #af4fff;
 }
 
-.navigation-menu-item:hover .navigation-menu-button {
-  opacity: 1;
-}
 
 .navigation-menu-item:hover .navigation-menu-link {
   opacity: 0.6;
@@ -286,14 +292,6 @@ address {
 
 .navigation-menu-item:active .navigation-menu-link {
   opacity: 0.3;
-}
-
-.navigation-menu-item-subcatalog {
-  display: none;
-}
-
-.navigation-menu-item:focus-within .navigation-menu-item-subcatalog {
-  display: block;
 }
 
 .navigation-menu-right {
@@ -1406,7 +1404,7 @@ address {
 
 /* Popover */
 
-.popover {
+.popover-cart {
   display: none;
   position: absolute;
   top: 35px;
@@ -1421,11 +1419,11 @@ address {
   line-height: 125%;
 }
 
-.user-menu-item:hover .popover {
+.user-menu-item:hover .popover-cart {
   display: block;
 }
 
-.popover::before {
+.popover-cart::before {
   content: "";
   position: absolute;
   background-image: url(../img/popover-triangle.svg);
@@ -1504,5 +1502,59 @@ address {
 }
 
 .cart-button:active span {
+  opacity: 0.3;
+}
+
+/* Popover catalog */
+
+.popover-catalog {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: -60px;
+  z-index: 30;
+  width: 1160px;
+  background-color: #ffe17f;
+  min-height: 180px;
+  padding: 33px 60px 27px;
+}
+
+.popover-catalog-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.popover-catalog-wrapper {
+  width: 210px;
+}
+
+.popover-catalog-item a {
+  font-size: 16px;
+  line-height: 112%;
+  color: #000;
+}
+
+.popover-catalog-item:hover a {
+  opacity: 0.6;
+}
+
+.popover-catalog-item:active a {
+  opacity: 0.3;
+}
+
+.navigation-menu-item:focus-within .popover-catalog {
+  display: block;
+}
+
+.navigation-menu-item-catalog:hover .popover-catalog {
+  display: block;
+}
+
+.navigation-menu-item-catalog:hover .navigation-menu-button.plus {
+  display: none;
+}
+
+.navigation-menu-item-catalog:hover .navigation-menu-button.minus {
+  display: block;
   opacity: 0.3;
 }
