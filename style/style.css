@@ -1154,6 +1154,10 @@ address {
   padding: 25px 60px 0;
 }
 
+.filter-fieldset {
+  border: none;
+}
+
 .filter-fieldset-title {
   font-weight: 700;
   line-height: 111%;
@@ -1164,6 +1168,60 @@ address {
 .filter-button {
   width: 220px;
   height: 40px;
+}
+
+/* Range */
+
+.range {
+  margin-top: 20px;
+}
+
+.range-field {
+  display: flex;
+}
+
+.range-input {
+  background-color: transparent;
+  border: 0;
+  width: auto;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.3;
+}
+
+/* Slider-bar */
+
+.range-slider {
+  height: 2px;
+  background-color: #dcdcdc;
+  position: relative;
+}
+
+.slider-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+}
+
+.slider-thumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ebebeb;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.thumb-min {
+  left: -9px;
+}
+
+.thumb-max {
+  right: 0;
 }
 
 /* Sort */

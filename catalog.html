@@ -173,17 +173,33 @@
           <h2 class="filter-title">фильтр:</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
-            <fieldset class="filter-fieldset">
+            <fieldset class="filter-fieldset filter-fieldset-price">
               <legend class="filter-fieldset-title">Стоимость</legend>
-              <div class="filter-range">
-                <label class="filter-label">от 0 <input class="filter-input" type="number" name="min-price"></label>
-                <label class="filter-label">до 5000 <input class="filter-input" type="number" name="max-price"></label>
-                <button class="range-toggle-min">
-                  <span class="visually-hidden">Ручка минимальной цены</span>
-                </button>
-                <button class="range-toggle-max">
-                  <span class="visually-hidden">Ручка максмальной цены</span>
-                </button>
+              <div class="range">
+
+
+                <div class="range-slider">
+                  <div class="slider-bar" style="left: 0; width: 119px;">
+                    <button class="slider-thumb thumb-min" type="button">
+                      <span class="visually-hidden">Ручка минимальной цены</span>
+                    </button>
+                    <button class="slider-thumb thumb-max" type="button">
+                      <span class="visually-hidden">Ручка максимальной цены</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="range-fields">
+                  <label class="range-field">
+                    <span class="range-title">от</span>
+                    <input class="range-input" type="number" name="price-min" value="0" min="0" max="10000" step="100">
+                  </label>
+                  <label class="range-field">
+                    <span class="range-title">до</span>
+                    <input class="range-input" type="number" name="price-max" value="5000" min="0" max="10000"
+                      step="100">
+                  </label>
+                </div>
               </div>
             </fieldset>
 
