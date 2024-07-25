@@ -1148,6 +1148,10 @@ address {
   color: #000;
 }
 
+.filter-title {
+  margin-bottom: 60px;
+}
+
 .filter {
   box-sizing: border-box;
   width: 320px;
@@ -1163,6 +1167,16 @@ address {
   line-height: 111%;
   letter-spacing: -0.02em;
   color: #000;
+  margin-bottom: 20px;
+}
+
+.filter-fieldset-title::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 200px;
+  background-color: #000;
+  margin-bottom: 12px;
 }
 
 .filter-button {
@@ -1171,10 +1185,6 @@ address {
 }
 
 /* Range */
-
-.range {
-  margin-top: 20px;
-}
 
 .range-field {
   display: flex;
