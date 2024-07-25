@@ -1160,6 +1160,11 @@ address {
 
 .filter-fieldset {
   border: none;
+  margin-bottom: 35px;
+}
+
+.filter-fieldset-price {
+  padding-bottom: 46px;
 }
 
 .filter-fieldset-title {
@@ -1167,7 +1172,7 @@ address {
   line-height: 111%;
   letter-spacing: -0.02em;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .filter-fieldset-title::before {
@@ -1176,7 +1181,7 @@ address {
   height: 2px;
   width: 200px;
   background-color: #000;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .filter-button {
@@ -1184,21 +1189,7 @@ address {
   height: 40px;
 }
 
-/* Range */
 
-.range-field {
-  display: flex;
-}
-
-.range-input {
-  background-color: transparent;
-  border: 0;
-  width: auto;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 15px;
-  opacity: 0.3;
-}
 
 /* Slider-bar */
 
@@ -1232,6 +1223,42 @@ address {
 
 .thumb-max {
   right: 0;
+}
+
+
+/* Range */
+
+/* .range-field {
+  display: flex;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.3;
+} */
+
+
+.range-field {
+  position: absolute;
+  top: 11px;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.3;
+}
+
+.range-field.min {
+  left: -14px;
+}
+
+.range-field.max {
+  right: 14px;
+}
+
+.range-input {
+  background-color: transparent;
+  border: 0;
+  width: auto;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 /* Sort */
