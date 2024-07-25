@@ -1228,14 +1228,6 @@ address {
 
 /* Range */
 
-/* .range-field {
-  display: flex;
-  font-weight: 400;
-  font-size: 15px;
-  opacity: 0.3;
-} */
-
-
 .range-field {
   position: absolute;
   top: 11px;
@@ -1249,7 +1241,7 @@ address {
 }
 
 .range-field.max {
-  right: 14px;
+  right: 55px;
 }
 
 .range-input {
@@ -1259,6 +1251,16 @@ address {
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  width: 5ch;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 /* Sort */
