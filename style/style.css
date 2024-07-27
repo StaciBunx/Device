@@ -1271,15 +1271,26 @@ address {
 
 .control {
   position: relative;
+
 }
 
 .control:hover {
   opacity: 0.6;
-
 }
 
 .control:active {
   opacity: 0.3;
+}
+
+.outline-wrapper {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: -1px;
+  width: 24px;
+  height: 24px;
+  outline: 2px solid #af4fff;
 }
 
 .control-lead {
@@ -1312,41 +1323,29 @@ address {
   background-image: url("../img/tick.svg");
 }
 
-.control-input[type="checkbox"]:checked+.control-lead::after {
-  background-image: url("../img/tick.svg");
-  background-position: center;
-  border: 5px solid transparent;
-  border-radius: 50%;
-}
-
 .control-input:disabled+.control-lead {
   opacity: 0.1;
 }
 
-
-
-.control-input:focus-visible+.control-lead::before {
-  outline: 2px solid #af4fff;
-}
-
-.control-input:checked+.control-lead::after {
+.control-input:checked~.control-lead::after {
   display: block;
 }
 
-.control-input:checked+.control-lead::before {
+.control-input:checked~.control-lead::before {
   border-color: #000;
 }
 
-
-
+.control-input:focus-visible+.outline-wrapper {
+  display: block;
+}
 
 /* Radio */
 
-.control-input[type="radio"]+.control-lead::before {
+.control-input[type="radio"]~.control-lead::before {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]+.control-lead::after {
+.control-input[type="radio"]~.control-lead::after {
   background-color: #000;
   background-image: none;
   background-clip: content-box;
