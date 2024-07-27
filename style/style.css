@@ -1273,6 +1273,15 @@ address {
   position: relative;
 }
 
+.control:hover {
+  opacity: 0.6;
+
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
 .control-lead {
   display: grid;
   grid-template-columns: 20px 1fr;
@@ -1303,28 +1312,18 @@ address {
   background-image: url("../img/tick.svg");
 }
 
-.control-input[type="checkbox"]:hover+.control-lead::before {
-  opacity: 0.6;
-}
-
-.control-input[type="checkbox"]:active+.control-lead::before {
-  opacity: 0.3;
-}
-
-.control-input[type="checkbox"]:hover+.control-lead::after {
-  opacity: 0.6;
-}
-
-.control-input[type="checkbox"]:active+.control-lead::after {
-  opacity: 0.3;
-}
-
 .control-input[type="checkbox"]:checked+.control-lead::after {
   background-image: url("../img/tick.svg");
   background-position: center;
   border: 5px solid transparent;
   border-radius: 50%;
 }
+
+.control-input:disabled+.control-lead {
+  opacity: 0.1;
+}
+
+
 
 .control-input:focus-visible+.control-lead::before {
   outline: 2px solid #af4fff;
@@ -1337,6 +1336,9 @@ address {
 .control-input:checked+.control-lead::before {
   border-color: #000;
 }
+
+
+
 
 /* Radio */
 
