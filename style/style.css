@@ -1222,6 +1222,16 @@ address {
   border-radius: 50%;
 }
 
+.slider-thumb:hover {
+  background-color: #f3f3f3;
+  border-color: #838383;
+}
+
+.slider-thumb:active {
+  background-color: #000;
+}
+
+
 .thumb-min {
   left: -9px;
 }
@@ -1237,7 +1247,7 @@ address {
   top: 11px;
   font-weight: 400;
   font-size: 15px;
-  opacity: 0.3;
+  color: #c1c1c1;
 }
 
 .range-field.min {
@@ -1250,15 +1260,17 @@ address {
 
 .range-input {
   background-color: transparent;
-  border: 0;
   width: auto;
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
   background-color: transparent;
-  border: none;
   appearance: textfield;
   width: 5ch;
+  border: transparent;
+  outline: 2px solid transparent;
+  color: inherit;
+
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1267,11 +1279,14 @@ address {
   margin: 0;
 }
 
+.range-input:focus-visible {
+  outline-color: #af4fff;
+}
+
 /* Control */
 
 .control {
   position: relative;
-
 }
 
 .control:hover {
