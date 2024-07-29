@@ -1229,6 +1229,7 @@ address {
 
 .slider-thumb:active {
   background-color: #000;
+  border-color: #000;
 }
 
 
@@ -1270,7 +1271,6 @@ address {
   border: transparent;
   outline: 2px solid transparent;
   color: inherit;
-
 }
 
 .range-input::-webkit-outer-spin-button,
