@@ -571,13 +571,6 @@ address {
 
 /* Subscribtion */
 
-.text-field__group .text-field__btn {
-  position: relative;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-left-width: 0;
-}
-
 .subscribe-field-group {
   display: flex;
   border-bottom: 3px solid #cecece;
