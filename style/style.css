@@ -457,9 +457,11 @@ address {
 
 .search-field-group {
   display: flex;
+  position: relative;
 }
 
 .search-field-input {
+  position: relative;
   font-family: inherit;
   color: #000;
   font-weight: 400;
@@ -467,21 +469,55 @@ address {
   line-height: 125%;
   border: 2px solid #000;
   border-radius: 50px 0 0 50px;
-  padding-left: 16px;
+  padding-left: 48px;
   width: 359px;
   height: 40px;
   background-color: transparent;
   border-right: none;
+  outline: transparent;
 }
 
-.search-field-input:focus {
-  outline: transparent;
+
+.search-field-label::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/search.svg");
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+.search-outline-wrapper {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  outline: 2px solid #af4fff;
+  width: 363px;
+  height: 44px;
+}
+
+.search-field-group:focus-within .search-outline-wrapper {
+  display: block;
 }
 
 .search-field-input::placeholder {
   font-family: inherit;
   color: #000;
+  opacity: 0.3;
 }
+
+.search-field-input:disabled {
+  opacity: 0.3;
+}
+
+.search-field-input:disabled+.search-field-label {
+  opacity: 0.3;
+}
+
+
 
 .search-field-button {
   display: inline-block;
@@ -1231,7 +1267,6 @@ address {
   background-color: #000;
   border-color: #000;
 }
-
 
 .thumb-min {
   left: -9px;
