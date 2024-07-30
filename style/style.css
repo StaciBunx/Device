@@ -447,6 +447,8 @@ address {
 
 /* Forms */
 
+/* Search */
+
 .search-form {
   color: #000;
   font-weight: 400;
@@ -477,7 +479,6 @@ address {
   outline: transparent;
 }
 
-
 .search-field-label::before {
   content: "";
   display: block;
@@ -495,7 +496,7 @@ address {
   top: -2px;
   left: -1px;
   outline: 2px solid #af4fff;
-  width: 363px;
+  width: 360px;
   height: 44px;
 }
 
@@ -517,8 +518,6 @@ address {
   opacity: 0.3;
 }
 
-
-
 .search-field-button {
   display: inline-block;
   font-family: inherit;
@@ -530,7 +529,17 @@ address {
   border: 2px solid #000;
   border-radius: 0 50px 50px 0;
   width: 160px;
-  cursor: pointer;
+  outline: transparent;
+}
+
+.search-button-outline-wrapper {
+  display: none;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  outline: 2px solid #af4fff;
+  width: 160px;
+  height: 44px;
 }
 
 .search-field-group .search-field-input {
@@ -539,6 +548,28 @@ address {
   position: relative;
   z-index: 2;
 }
+
+.search-field-button:hover:enabled {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+.search-field-button:active:enabled {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000;
+}
+
+.search-field-group:focus-within .search-button-outline-wrapper {
+  display: block;
+}
+
+.search-field-button:disabled {
+  opacity: 0.3;
+}
+
+/* Subscribtion */
 
 .text-field__group .text-field__btn {
   position: relative;
@@ -553,7 +584,6 @@ address {
   width: 809px;
 }
 
-
 .subscribe-field-input {
   font-family: inherit;
   color: inherit;
@@ -567,7 +597,6 @@ address {
   height: 55px;
   padding: 0px 0px 0px 16px;
   outline: transparent;
-
 }
 
 .subscribe-field-button {
@@ -585,6 +614,7 @@ address {
   width: 292px;
   height: 57px;
 }
+
 
 /* Slider */
 
