@@ -617,9 +617,32 @@ address {
   text-align: center;
   border: 3px solid #cecece;
   width: 292px;
+  cursor: pointer;
   height: 57px;
+  outline: 2px solid transparent;
 }
 
+.subscribe-field-button:focus-visible:enabled {
+  outline-color: #af4fff;
+  outline-offset: 2px;
+}
+
+.subscribe-field-button:hover:enabled {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.subscribe-field-button:active:enabled {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000;
+  border-color: #000;
+}
+
+.subscribe-field-button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
 
 /* Slider */
 
