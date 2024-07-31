@@ -1924,10 +1924,27 @@ address {
 
 .order-form {
   display: grid;
-  grid-template-columns: 360px 360px;
-  column-gap: 40px;
+  /* grid-template-columns: 360px 360px; */
+  /* column-gap: 40px; */
   row-gap: 42px;
 }
+
+.order-form-button {
+  width: 200px;
+}
+
+.field-group-top {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  column-gap: 40px;
+}
+
+.field-group-bottom {
+  display: grid;
+  grid-template-columns: 540px 180px;
+  column-gap: 40px;
+}
+
 
 .field-group {
   display: flex;

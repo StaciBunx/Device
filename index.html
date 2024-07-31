@@ -559,44 +559,51 @@
       </button>
 
       <form action="https://echo.htmlacademy.ru/" class="order-form" method="post">
+        <div class="field-group-top">
 
-        <div class="order-form-name field-group">
-          <label class="modal-field-title" for="name">Ваше имя:</label>
-          <input class="modal-field-input" type="text" name="name" id="name" placeholder="Введите имя">
+          <div class="order-form-name field-group">
+            <label class="modal-field-title" for="name">Ваше имя:</label>
+            <input class="modal-field-input" type="text" name="name" id="name" placeholder="Введите имя">
+          </div>
+
+          <div class="order-form-email field-group">
+            <label class="modal-field-title" for="modal-email">Ваш e-mail:</label>
+            <input class="modal-field-input" type="email" name="email" id="modal-email" placeholder="Почта">
+            <span class="modal-field-message">Забавный у вас адрес</span>
+          </div>
+
         </div>
 
-        <div class="order-form-email field-group">
-          <label class="modal-field-title" for="modal-email">Ваш e-mail:</label>
-          <input class="modal-field-input" type="email" name="email" id="modal-email" placeholder="Почта">
-          <span class="modal-field-message">Забавный у вас адрес</span>
-        </div>
-
-        <div class="order-form-order field-group">
-          <label class="modal-field-title" for="order">Что нужно привезти:</label>
-          <input class="modal-field-input" type="text" name="order" id="order" placeholder="В свободной форме">
-        </div>
+        <div class="field-group-bottom">
+          <div class="order-form-order field-group">
+            <label class="modal-field-title" for="order">Что нужно привезти:</label>
+            <input class="modal-field-input" type="text" name="order" id="order" placeholder="В свободной форме">
+          </div>
 
 
-        <div class="order-form-count field-group">
-          <span class="form-label-icon">
-            <label class="modal-field-title" for="count">Количество</label>
-            <button class="form-icon-info" type="button">
-              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-            </button>
-          </span>
-          <div class="field-number number">
-            <button class="number-button number-button-minus" type="button">
-              <span class="visually-hidden">Уменьшить количество</span>
-            </button>
+          <div class="order-form-count field-group">
+            <span class="form-label-icon">
+              <label class="modal-field-title" for="count">Количество</label>
+              <button class="form-icon-info" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+            </span>
+            <div class="field-number number">
+              <button class="number-button number-button-minus" type="button">
+                <span class="visually-hidden">Уменьшить количество</span>
+              </button>
 
-            <input class="modal-field-input" type="number" name="count" id="count" value="1" step="1" min="1">
+              <input class="modal-field-input" type="number" name="count" id="count" value="1" step="1" min="1">
 
-            <button class="number-button number-button-plus" type="button">
-              <span class="visually-hidden">Увеличить количество</span>
-            </button>
+              <button class="number-button number-button-plus" type="button">
+                <span class="visually-hidden">Увеличить количество</span>
+              </button>
 
+            </div>
           </div>
         </div>
+
+
 
         <button class="button order-form-button" type="submit">
           <span>Отправить</span>
