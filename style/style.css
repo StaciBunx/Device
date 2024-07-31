@@ -573,23 +573,38 @@ address {
 
 .subscribe-field-group {
   display: flex;
-  border-bottom: 3px solid #cecece;
   width: 809px;
 }
 
 .subscribe-field-input {
   font-family: inherit;
-  color: inherit;
+  color: #000;
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
-  opacity: 0.5;
   background-color: transparent;
   border: none;
   width: 557px;
-  height: 55px;
+  height: 57px;
   padding: 0px 0px 0px 16px;
   outline: transparent;
+  border-bottom: 3px solid #cecece;
+}
+
+.subscribe-field-input::placeholder {
+  opacity: 0.5;
+}
+
+.subscribe-field-input:focus {
+  background-color: #dcdcdc;
+}
+
+.subscribe-field-input:disabled {
+  opacity: 0.3;
+}
+
+.subscribe-field-input-error {
+  border-color: #ff3d3d;
 }
 
 .subscribe-field-button {
@@ -600,10 +615,7 @@ address {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
-  border-top: 3px solid #cecece;
-  border-left: 3px solid #cecece;
-  border-right: 3px solid #cecece;
-  border-bottom: none;
+  border: 3px solid #cecece;
   width: 292px;
   height: 57px;
 }
