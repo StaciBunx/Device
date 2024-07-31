@@ -1945,7 +1945,6 @@ address {
   column-gap: 40px;
 }
 
-
 .field-group {
   display: flex;
   flex-direction: column;
@@ -2013,4 +2012,43 @@ address {
 
 .modal-field-input:focus:invalid+.modal-field-message {
   color: #ff3d3d;
+}
+
+.number {
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+  width: 180px;
+}
+
+.number-input {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  /* padding: 0 50px; */
+  text-align: center;
+  appearance: textfield;
+}
+
+.number-input::-webkit-inner-spin-button,
+.number-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number-button {
+  position: relative;
+  z-index: 1;
+  grid-row: 1 / 2;
+  display: grid;
+  place-content: center;
+  border: none;
+}
+
+.number-button-minus {
+  grid-column: 1 / 2;
+}
+
+.number-button-plus {
+  grid-column: -2 / -1;
 }
