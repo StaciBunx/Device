@@ -1878,3 +1878,35 @@ address {
   background-color: rgba(240, 240, 240, 0.9);
   z-index: 50;
 }
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 72px 80px;
+  background-color: #FFFFFF;
+  border: 10px solid black;
+}
+
+.modal-order {
+  width: 920px;
+  height: 568px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 84px;
+  right: 80px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin-bottom: 42px;
+}
