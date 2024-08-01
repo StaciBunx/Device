@@ -1977,7 +1977,7 @@ address {
 }
 
 .modal-field-input:focus:invalid {
-  border-color: #ff3d3d;
+  border: 2px solid #ff3d3d;
   outline: none;
 }
 
@@ -2008,7 +2008,6 @@ address {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .number {
   position: relative;
