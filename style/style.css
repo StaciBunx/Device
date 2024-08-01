@@ -2068,3 +2068,7 @@ address {
 .order-form-button {
   width: 200px;
 }
+
+.order-form-button.button::before {
+  top: initial;
+}
