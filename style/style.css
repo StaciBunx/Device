@@ -1976,8 +1976,15 @@ address {
 .cart-item {
   display: grid;
   padding: 20px 20px;
-  grid-template-columns: 39px 1fr 10px;
+  grid-template-columns: 1fr 10px;
   column-gap: 23px;
+}
+
+.cart-item-wrapper {
+  display: grid;
+  grid-template-columns: 39px 1fr;
+  column-gap: 23px;
+  outline: 2px solid transparent;
 }
 
 .cart-item-title {
@@ -1990,6 +1997,28 @@ address {
   border: none;
   width: 10px;
   height: 10px;
+  outline: 2px solid transparent;
+  background-image: url(../img/popover-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cart-item:hover {
+  opacity: 0.6;
+}
+
+.cart-item:active {
+  opacity: 0.3;
+}
+
+.cart-item:focus-within .cart-item-wrapper {
+  outline-color: #af4fff;
+  outline-offset: 2px;
+}
+
+.cart-item:focus-within .cart-item-button {
+  outline-color: #af4fff;
+  outline-offset: 2px;
 }
 
 .cart-summary {
