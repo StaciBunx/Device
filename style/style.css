@@ -2049,6 +2049,24 @@ address {
   grid-column: 1 / 2;
 }
 
+.number-button-minus::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../img/icon-minus.svg");
+}
+
 .number-button-plus {
   grid-column: -2 / -1;
+}
+
+.number-button-plus::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../img/icon-plus.svg");
 }
