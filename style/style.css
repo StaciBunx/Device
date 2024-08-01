@@ -2045,12 +2045,13 @@ address {
   margin: 20px 20px;
   grid-column: 1/-1;
   outline: 2px solid transparent;
+  transition: background-color 0.3s linear;
 }
 
 .cart-button span {
   position: absolute;
   font-family: "Raleway", sans-serif;
-  color: #000;
+  color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -2059,9 +2060,23 @@ address {
 
 .cart-button:focus-visible {
   outline-color: #af4fff;
+  outline-offset: 2px;
+}
+
+.cart-button:hover {
+  background-color: #ffe17f;
 }
 
 .cart-button:active span {
+  opacity: 0.3;
+}
+
+.cart-button-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.cart-button-disabled span {
   opacity: 0.3;
 }
 
