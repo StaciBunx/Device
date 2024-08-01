@@ -1494,14 +1494,17 @@ address {
   width: 30px;
   height: 30px;
   border: none;
+  background-image: url("../img/sort-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.sort-button.up {
+/* .sort-button.up {
   background-image: url("../img/sort-button-up.svg");
-}
+} */
 
 .sort-button.down {
-  background-image: url("../img/sort-button-down.svg");
+  transform: rotate(180deg);
 }
 
 /* Cards */
