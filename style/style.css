@@ -1900,6 +1900,7 @@ address {
 }
 
 .modal-field-title {
+  /* display: inline-block; */
   font-weight: 700;
   line-height: 111%;
   letter-spacing: -0.02em;
@@ -1924,13 +1925,12 @@ address {
 
 .order-form {
   display: grid;
-  /* grid-template-columns: 360px 360px; */
-  /* column-gap: 40px; */
   row-gap: 42px;
 }
 
-.order-form-button {
-  width: 200px;
+.field-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .field-group-top {
@@ -1943,28 +1943,6 @@ address {
   display: grid;
   grid-template-columns: 540px 180px;
   column-gap: 40px;
-}
-
-.field-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-label-icon {
-  position: relative;
-}
-
-.form-icon-info {
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  margin-top: 3px;
-  margin-left: 8px;
-  background-color: transparent;
-  border: none;
-  background-image: url("../img/icon-form-info.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .modal-field-input {
@@ -2014,9 +1992,26 @@ address {
   color: #ff3d3d;
 }
 
+.order-form-count {
+  position: relative;
+}
+
+.form-icon-info {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 34px;
+  top: -3px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-form-info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .number {
   position: relative;
-  z-index: 0;
   display: grid;
   grid-template-columns: 60px 1fr 60px;
   width: 180px;
@@ -2025,7 +2020,6 @@ address {
 .number-input {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-  /* padding: 0 50px; */
   text-align: center;
   appearance: textfield;
 }
@@ -2069,4 +2063,8 @@ address {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url("../img/icon-plus.svg");
+}
+
+.order-form-button {
+  width: 200px;
 }
