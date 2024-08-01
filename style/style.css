@@ -2001,6 +2001,7 @@ address {
   background-image: url(../img/popover-close.svg);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .cart-item:hover {
