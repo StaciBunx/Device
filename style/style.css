@@ -1524,7 +1524,6 @@ address {
   opacity: 1;
 }
 
-
 /* Cards */
 
 .cards {
@@ -1718,11 +1717,11 @@ address {
   opacity: 0.6;
 }
 
-.pagination-link:focus-within {
+.pagination-link:focus-visible {
   outline-color: #af4fff;
 }
 
-.pagination-link:hover {
+.pagination-link:hover span {
   opacity: 1;
 }
 
