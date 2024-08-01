@@ -596,7 +596,7 @@ address {
   opacity: 0.3;
 }
 
-.subscribe-field-input-error {
+.subscribe-field-input:focus:invalid {
   border-color: #ff3d3d;
 }
 
@@ -1901,7 +1901,6 @@ address {
 }
 
 .modal-field-title {
-  /* display: inline-block; */
   font-weight: 700;
   line-height: 111%;
   letter-spacing: -0.02em;
@@ -1955,6 +1954,8 @@ address {
   font-size: 16px;
   line-height: 125%;
   color: #000;
+  border: 2px solid transparent;
+
 }
 
 .modal-field-input::placeholder {
@@ -1977,9 +1978,8 @@ address {
   opacity: 0.3;
 }
 
-.modal-field-input:focus:invalid {
-  border: 2px solid #ff3d3d;
-  outline: none;
+.modal-field-input:invalid {
+  border-color: #ff3d3d;
 }
 
 .modal-field-message {
