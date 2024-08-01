@@ -1493,19 +1493,37 @@ address {
 .sort-button {
   width: 30px;
   height: 30px;
+  outline: 2px solid transparent;
+  background: transparent;
+  border: none;
+}
+
+.sort-button-content {
+  width: 100%;
+  height: 100%;
   border: none;
   background-image: url("../img/sort-button.svg");
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.3;
 }
 
-/* .sort-button.up {
-  background-image: url("../img/sort-button-up.svg");
-} */
-
-.sort-button.down {
+.sort-button.down .sort-button-content {
   transform: rotate(180deg);
 }
+
+.sort-button:focus-visible {
+  outline-color: #af4fff;
+}
+
+.sort-button:hover .sort-button-content {
+  opacity: 0.6;
+}
+
+.sort-button:active .sort-button-content {
+  opacity: 1;
+}
+
 
 /* Cards */
 
