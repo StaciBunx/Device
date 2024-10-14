@@ -295,9 +295,13 @@ address {
 }
 
 .navigation-menu-right {
+  width: 471px;
+  margin-left: auto;
+}
+
+.navigation-menu-right ul {
   display: flex;
   gap: 47px;
-  margin-left: auto;
 }
 
 /* Footer */
