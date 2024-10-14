@@ -43,7 +43,7 @@ address {
 .page {
   scroll-behavior: smooth;
   height: 100%;
-  color: #444;
+  color: #444444;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 167%;
@@ -61,7 +61,7 @@ address {
 
 .title {
   font-family: "Raleway", sans-serif;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   font-size: 50px;
   line-height: 100%;
@@ -69,7 +69,7 @@ address {
 
 .title::selection {
   color: #ffe17f;
-  background: #000
+  background: #000000
 }
 
 .button {
@@ -98,7 +98,7 @@ address {
 .button span {
   position: absolute;
   font-family: "Raleway", sans-serif;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -171,7 +171,7 @@ address {
 }
 
 .user-menu-link {
-  color: #000;
+  color: #000000;
   padding: 7px 5px;
   padding-right: 0;
   outline: 2px solid transparent;
@@ -190,7 +190,7 @@ address {
 }
 
 .user-menu-login::before {
-  content: url(../img/header-icon-login.svg);
+  content: url("../img/header-icon-login.svg");
   width: 13px;
   height: 13px;
   margin-right: 9px;
@@ -205,7 +205,7 @@ address {
 }
 
 .user-menu-compare::before {
-  content: url(../img/header-icon-compare.svg);
+  content: url("../img/header-icon-compare.svg");
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -218,7 +218,7 @@ address {
 }
 
 .user-menu-cart::before {
-  content: url(../img/header-icon-cart.svg);
+  content: url("../img/header-icon-cart.svg");
   position: absolute;
   left: 17px;
   width: 16px;
@@ -235,7 +235,7 @@ address {
   width: 21px;
   height: 21px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
   position: absolute;
   top: 8px;
   left: 2px;
@@ -252,7 +252,7 @@ address {
 }
 
 .navigation-menu-link {
-  color: #000;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
@@ -307,7 +307,7 @@ address {
 /* Footer */
 
 .page-footer {
-  background-color: #444;
+  background-color: #444444;
 }
 
 .footer-content {
@@ -327,7 +327,7 @@ address {
 
 .footer-address {
   width: 239px;
-  color: #fff;
+  color: #ffffff;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -335,7 +335,7 @@ address {
 }
 
 .footer-telefon {
-  color: #fff;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -362,7 +362,7 @@ address {
 }
 
 .footer-link {
-  color: #fff;
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
@@ -438,7 +438,7 @@ address {
 }
 
 .footer-developed:hover path {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .footer-developed:active path {
@@ -454,7 +454,7 @@ address {
 /* Search */
 
 .search-form {
-  color: #000;
+  color: #000000;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -469,11 +469,11 @@ address {
 .search-field-input {
   position: relative;
   font-family: inherit;
-  color: #000;
+  color: #000000;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   padding-left: 48px;
   width: 359px;
@@ -510,7 +510,7 @@ address {
 
 .search-field-input::placeholder {
   font-family: inherit;
-  color: #000;
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -530,7 +530,7 @@ address {
   line-height: 125%;
   text-align: center;
   background-color: transparent;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
   width: 160px;
   outline: transparent;
@@ -548,14 +548,14 @@ address {
 
 .search-field-button:hover:enabled {
   cursor: pointer;
-  background-color: #000;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .search-field-button:active:enabled {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.3);
-  background-color: #000;
+  background-color: #000000;
 }
 
 .search-field-group:focus-within .search-button-outline-wrapper {
@@ -575,7 +575,7 @@ address {
 
 .subscribe-field-input {
   font-family: inherit;
-  color: #000;
+  color: #000000;
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -583,7 +583,7 @@ address {
   border: none;
   width: 557px;
   height: 57px;
-  padding: 0px 0px 0px 16px;
+  padding: 0 0 0 16px;
   outline: transparent;
   border-bottom: 3px solid #cecece;
 }
@@ -605,7 +605,7 @@ address {
 }
 
 .subscribe-field-button {
-  color: #000;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -625,15 +625,15 @@ address {
 }
 
 .subscribe-field-button:hover:enabled {
-  color: #fff;
-  background-color: #000;
-  border-color: #000;
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .subscribe-field-button:active:enabled {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #000;
-  border-color: #000;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .subscribe-field-button:disabled {
@@ -686,7 +686,7 @@ address {
   display: block;
   width: 12px;
   height: 12px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
@@ -705,7 +705,7 @@ address {
 }
 
 .slider-control-active {
-  background-color: #000;
+  background-color: #000000;
 }
 
 .slider-item {
@@ -724,7 +724,7 @@ address {
   font-weight: 700;
   line-height: 1;
   letter-spacing: 1.79px;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   top: -24px;
   right: 48px;
@@ -804,7 +804,7 @@ address {
   font-weight: 400;
   font-size: 36px;
   line-height: 83%;
-  color: #000;
+  color: #000000;
   margin-bottom: 12px;
 }
 
@@ -872,7 +872,7 @@ address {
   font-weight: 800;
   line-height: 133%;
   letter-spacing: -0.02em;
-  color: #000;
+  color: #000000;
 }
 
 .category-link:focus {
@@ -906,7 +906,7 @@ address {
 .advantages-list {
   width: 280px;
   height: 320px;
-  border-right: #000 solid 7px;
+  border-right: #000000 solid 7px;
   padding: 64px 0;
 }
 
@@ -930,7 +930,7 @@ address {
   top: 0;
   width: 280px;
   height: 40px;
-  background-color: #000;
+  background-color: #000000;
   outline: 2px solid none;
   outline-offset: 2px;
 }
@@ -970,21 +970,21 @@ address {
 }
 
 .advantage.delivery.active::after {
-  content: url(../img/advantages-delivery.svg);
+  content: url("../img/advantages-delivery.svg");
   position: absolute;
   top: 4px;
   left: 674px;
 }
 
 .advantage.warranty.active::after {
-  content: url(../img/advantages-warranty.svg);
+  content: url("../img/advantages-warranty.svg");
   position: absolute;
   top: 4px;
   left: 674px;
 }
 
 .advantage.credit.active::after {
-  content: url(../img/advantages-credit.svg);
+  content: url("../img/advantages-credit.svg");
   position: absolute;
   top: 4px;
   left: 674px;
@@ -1014,7 +1014,7 @@ address {
   width: 125px;
   height: 100px;
   background-color: #ffe17f;
-  background-image: url(../img/special-delivery-icon.svg);
+  background-image: url("../img/special-delivery-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 10;
@@ -1059,7 +1059,7 @@ address {
   font-size: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   text-align: center;
 }
 
@@ -1081,7 +1081,7 @@ address {
   display: block;
   width: 84px;
   height: 7px;
-  background-color: #000;
+  background-color: #000000;
   margin-bottom: 61px;
 }
 
@@ -1119,7 +1119,7 @@ address {
 }
 
 .about-list-item-text {
-  color: #000;
+  color: #000000;
   font-weight: 700;
   line-height: 111%;
   letter-spacing: -0.02em;
@@ -1197,7 +1197,7 @@ address {
 
 .breadcrumbs-link {
   font-size: 16px;
-  color: #000;
+  color: #000000;
 }
 
 .breadcrumbs-item {
@@ -1205,7 +1205,7 @@ address {
 }
 
 .breadcrumbs-item:not(:last-child)::after {
-  content: url(../img/catalog-breadcrumbs.svg);
+  content: url("../img/catalog-breadcrumbs.svg");
   width: 4px;
   height: 7px;
   opacity: 0.3;
@@ -1236,7 +1236,7 @@ address {
   font-size: 16px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }
 
 .filter-title {
@@ -1262,7 +1262,7 @@ address {
   font-weight: 700;
   line-height: 111%;
   letter-spacing: -0.02em;
-  color: #000;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -1271,7 +1271,7 @@ address {
   display: block;
   height: 2px;
   width: 200px;
-  background-color: #000;
+  background-color: #000000;
   margin-bottom: 11px;
 }
 
@@ -1300,7 +1300,7 @@ address {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  background-color: #000;
+  background-color: #000000;
   position: absolute;
 }
 
@@ -1309,7 +1309,7 @@ address {
   width: 20px;
   height: 20px;
   background-color: #ebebeb;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   border-radius: 50%;
 }
 
@@ -1319,8 +1319,8 @@ address {
 }
 
 .slider-thumb:active {
-  background-color: #000;
-  border-color: #000;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .thumb-min {
@@ -1350,8 +1350,6 @@ address {
 }
 
 .range-input {
-  background-color: transparent;
-  width: auto;
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
@@ -1403,7 +1401,7 @@ address {
   grid-template-columns: 20px 1fr;
   gap: 16px;
   align-items: center;
-  color: #000;
+  color: #000000;
 }
 
 .control-lead::before,
@@ -1417,7 +1415,7 @@ address {
 
 .control-lead::before {
   background-color: transparent;
-  border: 2px solid #ccc;
+  border: 2px solid #cccccc;
   border-radius: 3px;
 }
 
@@ -1437,7 +1435,7 @@ address {
 }
 
 .control-input:checked~.control-lead::before {
-  border-color: #000;
+  border-color: #000000;
 }
 
 .control-input:focus-visible+.outline-wrapper {
@@ -1451,7 +1449,7 @@ address {
 }
 
 .control-input[type="radio"]~.control-lead::after {
-  background-color: #000;
+  background-color: #000000;
   background-image: none;
   background-clip: content-box;
   border: 6px solid transparent;
@@ -1534,8 +1532,8 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  background-color: #fff;
-  padding: 70px 40px 0px 40px;
+  background-color: #ffffff;
+  padding: 70px 40px 0 40px;
 }
 
 .card {
@@ -1561,11 +1559,11 @@ address {
   font-weight: 700;
   line-height: 111%;
   letter-spacing: -0.02em;
-  color: #000;
+  color: #000000;
 }
 
 .card-price {
-  color: #444;
+  color: #444444;
 }
 
 .card-button {
@@ -1592,7 +1590,7 @@ address {
 .card-button span {
   position: absolute;
   font-family: "Raleway", sans-serif;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -1623,14 +1621,14 @@ address {
 }
 
 .pagination-button {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 3px solid #e5e5e5;
   width: 760px;
   height: 55px;
   margin-bottom: 44px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1644,7 +1642,7 @@ address {
 }
 
 .pagination-button:hover {
-  border-color: #000;
+  border-color: #000000;
 }
 
 .pagination-button:active {
@@ -1663,7 +1661,7 @@ address {
   height: 71px;
   padding: 25px;
   font-family: "Raleway", sans-serif;
-  color: #000;
+  color: #000000;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -1713,7 +1711,7 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
-  color: #444;
+  color: #444444;
   opacity: 0.3;
 }
 
@@ -1773,7 +1771,7 @@ address {
   font-weight: 700;
   line-height: 111%;
   letter-spacing: -0.02em;
-  color: #000;
+  color: #000000;
   margin-bottom: 14px;
 }
 
@@ -1832,12 +1830,11 @@ address {
 .modal-field-input {
   padding: 20px;
   font: inherit;
-  border: none;
   background-color: #f0f0f0;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
-  color: #000;
+  color: #000000;
   border: 2px solid transparent;
 
 }
@@ -1867,7 +1864,7 @@ address {
 }
 
 .modal-field-message {
-  color: #000;
+  color: #000000;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
@@ -1910,7 +1907,7 @@ address {
 
 .number-input::-webkit-inner-spin-button,
 .number-input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -1966,9 +1963,9 @@ address {
   right: -60px;
   z-index: 30;
   width: 320px;
-  background-color: #000;
+  background-color: #000000;
   min-height: 190px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -1981,7 +1978,7 @@ address {
 .popover-cart::before {
   content: "";
   position: absolute;
-  background-image: url(../img/popover-triangle.svg);
+  background-image: url("../img/popover-triangle.svg");
   top: -6px;
   height: 7px;
   width: 14px;
@@ -2022,7 +2019,7 @@ address {
   width: 10px;
   height: 10px;
   outline: 2px solid transparent;
-  background-image: url(../img/popover-close.svg);
+  background-image: url("../img/popover-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -2066,7 +2063,7 @@ address {
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 20px 20px;
   grid-column: 1/-1;
   outline: 2px solid transparent;
@@ -2131,7 +2128,7 @@ address {
 .popover-catalog-item a {
   font-size: 16px;
   line-height: 112%;
-  color: #000;
+  color: #000000;
 }
 
 .popover-catalog-item:hover a {
@@ -2170,8 +2167,8 @@ address {
   padding: 17px;
   width: 200px;
   min-height: 160px;
-  background-color: #000;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -2181,7 +2178,7 @@ address {
 .popover-order::before {
   content: "";
   position: absolute;
-  background-image: url(../img/popover-triangle.svg);
+  background-image: url("../img/popover-triangle.svg");
   top: -6px;
   height: 7px;
   width: 14px;
