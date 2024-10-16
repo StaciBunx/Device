@@ -32,51 +32,58 @@
         </div>
       </form>
 
-
       <ul class="user-menu-list">
-        <li class="user-menu-item">
-          <a class="user-menu-link user-menu-login" href="#">Войти</a>
+        <li class="user-menu-list-authorization">
+          <ul>
+            <li class="user-menu-item">
+              <a class="user-menu-link user-menu-login" href="#">Войти</a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user-menu-link user-menu-logout" href="#">Выйти</a>
+            </li>
+          </ul>
         </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link user-menu-logout" href="#">Выйти</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link user-menu-compare" href="#">Сравнить</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link user-menu-cart" href="#">
-            <span class="cart-counter">2</span> Корзина</a>
+        <li class="user-menu-list-products">
+          <ul>
+            <li class="user-menu-item">
+              <a class="user-menu-link user-menu-compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user-menu-link user-menu-cart" href="#">
+                <span class="cart-counter">2</span> Корзина</a>
 
-          <div class="popover popover-cart">
-            <div class="popover-content">
-              <ul class="cart-item-list">
-                <li class="cart-item">
-                  <div class="cart-item-wrapper">
-                    <img src="../img/content/product-1.jpg" alt="Любительская селфи палка"
-                      style="width:39px; height: 43px;">
-                    <p class="cart-item-title">Любительская селфи-палка</p>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <ul class="cart-item-list">
+                    <li class="cart-item">
+                      <div class="cart-item-wrapper">
+                        <img src="../img/content/product-1.jpg" alt="Любительская селфи палка"
+                          style="width:39px; height: 43px;">
+                        <p class="cart-item-title">Любительская селфи-палка</p>
+                      </div>
+                      <button class="cart-item-button">
+                        <span class="visually-hidden">Удалить из корзины</span></button>
+                    </li>
+                    <li class="cart-item">
+                      <div class="cart-item-wrapper">
+                        <img src="../img/content/product-2.jpg" alt="Профессиональная
+                      селфи-палка" style="width:39px; height: 43px;">
+                        <p class="cart-item-title">Профессиональная
+                          селфи-палка</p>
+                      </div>
+                      <button class="cart-item-button">
+                        <span class="visually-hidden">Удалить из корзины</span></button>
+                    </li>
+                  </ul>
+                  <div class="cart-summary">
+                    <p class="cart-count">Товаров: 2</p>
+                    <p class="cart-cost">Сумма: 2000 ₽</p>
                   </div>
-                  <button class="cart-item-button">
-                    <span class="visually-hidden">Удалить из корзины</span></button>
-                </li>
-                <li class="cart-item">
-                  <div class="cart-item-wrapper">
-                    <img src="../img/content/product-2.jpg" alt="Профессиональная
-                  селфи-палка" style="width:39px; height: 43px;">
-                    <p class="cart-item-title">Профессиональная
-                      селфи-палка</p>
-                  </div>
-                  <button class="cart-item-button">
-                    <span class="visually-hidden">Удалить из корзины</span></button>
-                </li>
-              </ul>
-              <div class="cart-summary">
-                <p class="cart-count">Товаров: 2</p>
-                <p class="cart-cost">Сумма: 2000 ₽</p>
+                  <a href="#" class="cart-button" aria-current="page"><span>Открыть корзину</span></a>
+                </div>
               </div>
-              <a href="#" class="cart-button" aria-current="page"><span>Открыть корзину</span></a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
