@@ -169,8 +169,8 @@ address {
   height: 40px;
 }
 
-.user-menu-list-authorization ul,
-.user-menu-list-products ul {
+.user-menu-list-authorization,
+.user-menu-list-products {
   display: flex;
   justify-content: space-between;
   gap: 18px;
