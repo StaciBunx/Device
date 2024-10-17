@@ -74,7 +74,7 @@ address {
 
 .button {
   display: flex;
-  /* padding: 14px 20px; */
+  padding: 10px 10px;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -83,6 +83,7 @@ address {
   cursor: pointer;
   outline: 2px solid transparent;
   min-height: 40px;
+  text-align: center;
 
 }
 
@@ -98,13 +99,13 @@ address {
 }
 
 .button span {
-  position: absolute;
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  z-index: 10;
 }
 
 .button:focus-visible {
