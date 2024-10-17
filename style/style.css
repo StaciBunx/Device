@@ -254,7 +254,7 @@ address {
 .navigation-menu-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .navigation-menu-item-catalog {
@@ -262,6 +262,8 @@ address {
 }
 
 .navigation-menu-link {
+  display: flex;
+  align-items: center;
   color: #000000;
   min-height: 50px;
   font-family: "Raleway", sans-serif;
@@ -272,14 +274,12 @@ address {
 }
 
 .navigation-catalog {
-  display: flex;
   padding-right: 70px;
-  align-items: center;
 }
 
 .navigation-menu-button {
   position: absolute;
-  left: 243px;
+  right: 3px;
   top: calc((100% - 50px)/2);
   opacity: 0.3;
   cursor: pointer;
