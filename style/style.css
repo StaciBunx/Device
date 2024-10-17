@@ -164,7 +164,7 @@ address {
   align-items: center;
   justify-content: space-between;
   width: 497px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .user-menu-list-authorization,
@@ -253,6 +253,8 @@ address {
 
 .navigation-menu-list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-menu-item-catalog {
@@ -261,6 +263,7 @@ address {
 
 .navigation-menu-link {
   color: #000000;
+  min-height: 50px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
@@ -269,7 +272,9 @@ address {
 }
 
 .navigation-catalog {
-  padding: 15px 70px 17px 2px;
+  display: flex;
+  padding-right: 70px;
+  align-items: center;
 }
 
 .navigation-menu-button {
@@ -303,8 +308,8 @@ address {
 }
 
 .navigation-menu-right {
-  width: 471px;
-  margin-left: auto;
+  /* min-width: 471px; */
+  /* display: flex; */
 }
 
 .navigation-menu-right ul {
