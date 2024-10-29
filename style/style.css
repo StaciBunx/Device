@@ -480,35 +480,14 @@ address {
   position: relative;
 }
 
-.search-field-input {
-  position: relative;
-  font-family: inherit;
-  color: #000000;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
-  border: 2px solid #000000;
-  border-radius: 50px 0 0 50px;
-  padding-left: 48px;
-  width: 359px;
-  height: 40px;
-  background-color: transparent;
-  border-right: none;
-  outline: transparent;
+.search-inputbox {
+  display: flex;
+  flex-direction: column;
 }
 
-.search-field-label::before {
+/*  аутлан новый сделать */
+.search-inputbox::before {
   content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  background-image: url("../img/search.svg");
-  position: absolute;
-  top: 12px;
-  left: 16px;
-}
-
-.search-outline-wrapper {
   display: none;
   position: absolute;
   top: -2px;
@@ -518,7 +497,36 @@ address {
   height: 44px;
 }
 
-.search-field-group:focus-within .search-outline-wrapper {
+.search-field-input {
+  flex: 1;
+  position: relative;
+  font-family: inherit;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  width: 359px;
+  padding: 8px 0 8px 48px;
+  background-color: transparent;
+  border-right: none;
+  outline: transparent;
+  height: inherit;
+}
+
+.search-field-label::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/search.svg");
+  position: absolute;
+  top: calc((100% - 16px) / 2);
+  left: 16px;
+}
+
+.search-field-group:focus-within .search-inputbox::before {
   display: block;
 }
 
@@ -548,6 +556,7 @@ address {
   border-radius: 0 50px 50px 0;
   width: 160px;
   outline: transparent;
+  padding: 5px;
 }
 
 .search-button-outline-wrapper {
@@ -810,7 +819,7 @@ address {
 }
 
 .slider-details-item {
-  width: 147px;
+  min-width: 147px;
 }
 
 .slider-details-item dt {
