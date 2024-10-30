@@ -934,7 +934,6 @@ address {
 
 .advantages-button {
   width: 160px;
-  height: 40px;
   margin-bottom: 35px;
   z-index: 10;
 }
@@ -942,6 +941,7 @@ address {
 .advantages-button.active {
   width: 280px;
   padding-right: 120px;
+  background-color: #000000;
 }
 
 .advantages-button.active span {
@@ -951,7 +951,6 @@ address {
 .advantages-button.active::before {
   top: 0;
   width: 280px;
-  /* height: 40px; */
   background-color: #000000;
   outline: 2px solid none;
   outline-offset: 2px;
