@@ -605,7 +605,7 @@ address {
   background-color: transparent;
   border: none;
   width: 557px;
-  height: 57px;
+  min-height: 57px;
   padding: 0 0 0 16px;
   outline: transparent;
   border-bottom: 3px solid #cecece;
@@ -628,6 +628,7 @@ address {
 }
 
 .subscribe-field-button {
+  padding: 5px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -638,7 +639,7 @@ address {
   border: 3px solid #cecece;
   width: 292px;
   cursor: pointer;
-  height: 57px;
+  min-height: 57px;
   outline: 2px solid transparent;
 }
 
@@ -1020,25 +1021,26 @@ address {
 .special-link {
   background-color: #f0f0f0;
   display: block;
-  height: 100px;
+  min-height: 100px;
   outline: 2px solid transparent;
   position: relative;
 }
 
-.special-wrapper {
-  height: 100px;
-  display: flex;
-}
-
-.special-icon-wrapper {
+.special-link::before {
+  content: "";
   position: absolute;
   width: 125px;
-  height: 100px;
+  min-height: 100px;
   background-color: #ffe17f;
   background-image: url("../img/special-delivery-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 10;
+}
+
+.special-wrapper {
+  min-height: 100px;
+  display: flex;
 }
 
 .special-more-wrapper {
@@ -1075,6 +1077,7 @@ address {
 .special-text {
   margin: auto;
   display: block;
+  padding: 10px 125px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -1190,13 +1193,15 @@ address {
   position: relative;
 }
 
+.subscribe-note {
+  max-width: 160px;
+}
+
 .subscribe-note::before {
   content: url("../img/icon-tick-big.svg");
-  /* margin-right: 17px; */
   position: absolute;
   top: 15px;
   right: 143px;
-
 }
 
 /* Catalog header */
