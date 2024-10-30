@@ -916,7 +916,7 @@ address {
 /* Advantages */
 
 .advantages {
-  height: 390px;
+  min-height: 390px;
   background-image: linear-gradient(to bottom, #ffffff 100px, #f0f0f0 100px);
   margin-bottom: 70px;
 }
@@ -927,7 +927,7 @@ address {
 
 .advantages-list {
   width: 280px;
-  height: 320px;
+  min-height: 320px;
   border-right: #000000 solid 7px;
   padding: 64px 0;
 }
