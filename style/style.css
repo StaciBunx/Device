@@ -485,7 +485,6 @@ address {
   flex-direction: column;
 }
 
-/*  аутлан новый сделать */
 .search-inputbox::before {
   content: "";
   display: none;
@@ -495,6 +494,10 @@ address {
   outline: 2px solid #af4fff;
   width: 360px;
   height: 44px;
+}
+
+.search-field-group:focus-within .search-inputbox::before {
+  display: block;
 }
 
 .search-field-input {
@@ -526,10 +529,6 @@ address {
   left: 16px;
 }
 
-.search-field-group:focus-within .search-inputbox::before {
-  display: block;
-}
-
 .search-field-input::placeholder {
   font-family: inherit;
   color: #000000;
@@ -559,7 +558,8 @@ address {
   padding: 5px;
 }
 
-.search-button-outline-wrapper {
+.search-field-button::before {
+  content: "";
   display: none;
   position: absolute;
   top: -2px;
@@ -567,6 +567,10 @@ address {
   outline: 2px solid #af4fff;
   width: 160px;
   height: 44px;
+}
+
+.search-field-group:focus-within .search-field-button::before {
+  display: block;
 }
 
 .search-field-button:hover:enabled {
@@ -579,10 +583,6 @@ address {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.3);
   background-color: #000000;
-}
-
-.search-field-group:focus-within .search-button-outline-wrapper {
-  display: block;
 }
 
 .search-field-button:disabled {
