@@ -336,11 +336,12 @@ address {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 15px;
   margin-bottom: 47px;
 }
 
 .footer-address {
-  width: 239px;
+  max-width: 239px;
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
@@ -349,6 +350,7 @@ address {
 }
 
 .footer-telefon {
+  max-width: 175px;
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
@@ -370,19 +372,23 @@ address {
 }
 
 .footer-list {
-  width: 444px;
   display: flex;
+  gap: 35px;
   justify-content: space-between;
 }
 
 .footer-link {
+  display: inline-block;
   color: #ffffff;
+  text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding-bottom: 4px;
   outline: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+
 }
 
 .footer-link:focus-visible {
@@ -391,7 +397,7 @@ address {
 
 .footer-link:hover {
   color: #ffc700;
-  border-bottom: 2px solid #ffc700;
+  border-color: #ffc700;
 }
 
 .footer-link:active {
