@@ -1049,7 +1049,7 @@ address {
   position: absolute;
   background-color: rgba(220, 220, 220, 0.5);
   width: 40px;
-  /* height: 40px; */
+  height: 40px;
   z-index: 10;
   right: 42px;
   top: 30px;
