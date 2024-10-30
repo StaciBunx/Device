@@ -690,7 +690,8 @@ address {
   display: flex;
   gap: 16px;
   right: 0;
-  bottom: 173px;
+  top: calc((100% - 12px) / 2);
+  /* bottom: 173px; */
   z-index: 30;
 }
 
