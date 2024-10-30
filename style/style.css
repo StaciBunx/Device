@@ -850,47 +850,46 @@ address {
 
 .category-item {
   width: 160px;
-  height: 253px;
+  min-height: 253px;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.category-link {
+.category-link::before {
+  content: "";
   display: block;
-  position: relative;
   height: 160px;
   background-color: #ffe17f;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 32px;
 }
 
-.category-link.vr {
+.category-link.vr::before {
   background-image: url("../img/category-images-1.svg");
 }
 
-.category-link.monopods {
+.category-link.monopods::before {
   background-image: url("../img/category-images-2.svg");
 }
 
-.category-link.action-cameras {
+.category-link.action-cameras::before {
   background-image: url("../img/category-images-3.svg");
 }
 
-.category-link.fitness-band {
+.category-link.fitness-band::before {
   background-image: url("../img/category-images-4.svg");
 }
 
-.category-link.smart-watch {
+.category-link.smart-watch::before {
   background-image: url("../img/category-images-5.svg");
 }
 
-.category-link.drones {
+.category-link.drones::before {
   background-image: url("../img/category-images-6.svg");
 }
 
 .category-link span {
-  position: absolute;
-  top: 192px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 133%;
