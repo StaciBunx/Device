@@ -697,7 +697,8 @@ address {
   display: flex;
   gap: 16px;
   right: 0;
-  top: calc((100% - 12px) / 2);
+  top: 343px;
+  /* top: calc((100% - 12px) / 2); */
   /* bottom: 173px; */
   z-index: 30;
 }
@@ -1222,7 +1223,7 @@ address {
 
 .breadcrumbs {
   display: flex;
-  height: 19px;
+  min-height: 19px;
   align-items: center;
   gap: 36px;
 }
