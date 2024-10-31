@@ -1287,10 +1287,6 @@ address {
   margin-bottom: 35px;
 }
 
-.filter-fieldset-price {
-  padding-bottom: 46px;
-}
-
 .filter-fieldset-title {
   font-weight: 700;
   line-height: 111%;
@@ -1373,9 +1369,10 @@ address {
 
 .range-wrapper-inputs {
   display: flex;
+  overflow: auto;
 }
 
-.range-field_label {
+.range-field-label {
   display: flex;
   font-weight: 400;
   font-size: 15px;
