@@ -190,29 +190,38 @@
 
             <fieldset class="filter-fieldset filter-fieldset-price">
               <legend class="filter-fieldset-title">Стоимость</legend>
+
               <div class="range">
+
                 <div class="range-slider">
                   <div class="slider-bar" style="left: 0; width: 119px;">
                     <button class="slider-thumb thumb-min" type="button">
-                      <span class="outline-wrapper"></span>
+                      <!-- <span class="outline-wrapper"></span> -->
                       <span class="visually-hidden">Ручка минимальной цены</span>
                     </button>
                     <button class="slider-thumb thumb-max" type="button">
-                      <span class="outline-wrapper"></span>
+                      <!-- <span class="outline-wrapper"></span> -->
                       <span class="visually-hidden">Ручка максимальной цены</span>
                     </button>
                   </div>
-                  <label class="range-field min">
+                </div>
+
+                <div class="range-wrapper-inputs">
+
+                  <label class="range-field_label min">
                     <span class="range-title">от</span>
                     <input class="range-input" type="number" name="price-min" value="0" min="0" max="10000" step="100">
                   </label>
-                  <label class="range-field max">
+
+                  <label class="range-field_label max">
                     <span class="range-title">до</span>
                     <input class="range-input" type="number" name="price-max" value="5000" min="0" max="10000"
                       step="100">
                   </label>
                 </div>
+
               </div>
+
             </fieldset>
 
             <fieldset class="filter-fieldset filter-fieldset-color">

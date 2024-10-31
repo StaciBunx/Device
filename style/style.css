@@ -1322,10 +1322,15 @@ address {
 
 /* Slider-bar */
 
+.range {
+  max-width: 200px;
+}
+
 .range-slider {
   height: 2px;
   background-color: #dcdcdc;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .slider-bar {
@@ -1366,20 +1371,31 @@ address {
 
 /* Range */
 
-.range-field {
-  position: absolute;
-  top: 11px;
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.range-field_label {
+  display: flex;
   font-weight: 400;
   font-size: 15px;
   color: #c1c1c1;
+  line-height: normal;
+  position: relative;
 }
 
-.range-field.min {
+.range-title {
+  padding: 2px 0;
+  margin-right: 5px;
+}
+
+
+.range-field_label.min {
   left: -14px;
 }
 
-.range-field.max {
-  right: 55px;
+.range-field_label.max {
+  left: 0;
 }
 
 .range-input {
@@ -1389,6 +1405,7 @@ address {
   background-color: transparent;
   appearance: textfield;
   width: 5ch;
+  padding: 2px 0;
   border: transparent;
   outline: 2px solid transparent;
   color: inherit;
