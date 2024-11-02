@@ -1585,6 +1585,7 @@ address {
 
 .card {
   position: relative;
+  max-width: 360px;
 }
 
 .card-link {
@@ -1599,6 +1600,7 @@ address {
 .card-text-content {
   display: grid;
   grid-template-columns: min-content 1fr;
+  column-gap: 10px;
   justify-items: end;
 }
 
@@ -1641,6 +1643,8 @@ address {
   font-size: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: center;
+
 }
 
 .card-link:focus-visible {
