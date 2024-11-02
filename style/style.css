@@ -1684,6 +1684,7 @@ address {
   text-transform: uppercase;
   cursor: pointer;
   outline: 2px solid transparent;
+  padding: 5px;
 }
 
 .pagination-button:focus-visible {
@@ -1700,15 +1701,15 @@ address {
 }
 
 .pagination-container {
-  height: 71px;
+  min-height: 71px;
   background-color: #ebebeb;
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: 128px 1fr 128px;
 }
 
 .pagination-control {
-  display: inline-block;
-  height: 71px;
+  display: block;
+  min-height: 71px;
   padding: 25px;
   font-family: "Raleway", sans-serif;
   color: #000000;
@@ -1717,7 +1718,6 @@ address {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   z-index: 10;
-  position: absolute;
   outline: 2px solid transparent;
 }
 
@@ -1739,7 +1739,6 @@ address {
 }
 
 .pagination-list {
-  width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1748,8 +1747,8 @@ address {
 }
 
 .pagination-link {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
