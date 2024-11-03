@@ -148,7 +148,7 @@ address {
 
 .page-header {
   background-image: linear-gradient(to bottom, #ffffff 40px, #ffe17f 40px);
-  padding: 18px 60px 38px;
+  padding: 18px 60px 21px;
 }
 
 .header-top {
@@ -690,10 +690,8 @@ address {
   position: absolute;
   display: flex;
   gap: 16px;
-  right: 0;
-  top: 343px;
-  /* top: calc((100% - 12px) / 2); */
-  /* bottom: 173px; */
+  right: -2px;
+  top: 337px;
   z-index: 30;
 }
 
@@ -761,7 +759,7 @@ address {
   display: block;
   height: 560px;
   position: absolute;
-  top: -38px;
+  top: -36px;
 }
 
 .slider-image-control {
@@ -775,14 +773,14 @@ address {
 
 .slider-image-control.left {
   position: absolute;
-  top: 173px;
+  top: 175px;
   left: 30px
 }
 
 .slider-image-control.right {
   position: absolute;
-  top: 173px;
-  left: 560px
+  top: 175px;
+  left: 540px
 }
 
 .slider-image-control:focus-visible {
@@ -808,18 +806,18 @@ address {
 }
 
 .slider-description {
-  padding: 29px 0 51px;
+  padding: 29px 0 47px;
 }
 
 .slider-button {
   max-width: 220px;
-  margin-bottom: 50px;
+  margin-bottom: 43px;
 }
 
 .slider-details {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 13px;
 }
 
 .slider-details-item {
