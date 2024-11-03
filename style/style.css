@@ -127,9 +127,7 @@ address {
 
 .logo-link {
   display: grid;
-  place-content: center;
   width: 149px;
-  height: 40px;
   outline: 2px solid transparent;
 }
 
@@ -181,8 +179,6 @@ address {
 
 .user-menu-link {
   color: #000000;
-  padding: 7px 5px;
-  padding-right: 0;
   outline: 2px solid transparent;
 }
 
@@ -200,9 +196,7 @@ address {
 
 .user-menu-login::before {
   content: url("../img/header-icon-login.svg");
-  width: 13px;
-  height: 13px;
-  margin-right: 9px;
+  margin-right: 14px;
 }
 
 .user-menu-logout {
@@ -246,7 +240,7 @@ address {
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  top: 8px;
+  top: -1px;
   left: 2px;
 }
 
