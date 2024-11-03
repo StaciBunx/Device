@@ -668,6 +668,7 @@ address {
 /* Slider */
 
 .slider {
+  padding-bottom: 38px;
   margin-bottom: 70px;
 }
 
@@ -750,8 +751,8 @@ address {
   letter-spacing: 1.79px;
   color: #ffffff;
   position: absolute;
-  top: -24px;
-  right: 48px;
+  top: -29px;
+  right: 45px;
   z-index: 10;
 }
 
