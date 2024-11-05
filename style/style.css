@@ -858,9 +858,12 @@ address {
   outline-offset: 2px;
 }
 
+.category-link {
+  display: block;
+}
+
 .category-link::before {
   content: "";
-  display: block;
   height: 160px;
   background-color: #ffe17f;
   background-repeat: no-repeat;
@@ -893,9 +896,11 @@ address {
 }
 
 .category-link span {
+  display: block;
+  padding-top: 194px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  line-height: 133%;
+  line-height: 130%;
   letter-spacing: -0.02em;
   color: #000000;
 }
