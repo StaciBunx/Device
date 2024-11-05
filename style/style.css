@@ -934,10 +934,10 @@ address {
 }
 
 .advantages-list {
-  width: 280px;
+  width: 288px;
   min-height: 320px;
-  border-right: #000000 solid 7px;
-  padding: 64px 0;
+  border-right: #000000 solid 8px;
+  padding: 64px 0 29px;
 }
 
 .advantages-button {
@@ -980,13 +980,12 @@ address {
   padding: 72px 63px 72px 116px;
 }
 
-
 .advantage-title {
   margin-bottom: 35px;
 }
 
 .advantage-text {
-  width: 450px;
+  width: 455px;
 }
 
 .advantage {
@@ -998,25 +997,26 @@ address {
   display: block;
 }
 
+
 .advantage.delivery.active::after {
   content: url("../img/advantages-delivery.svg");
   position: absolute;
-  top: 4px;
-  left: 674px;
+  top: 5px;
+  left: 557px;
 }
 
 .advantage.warranty.active::after {
   content: url("../img/advantages-warranty.svg");
   position: absolute;
-  top: 4px;
-  left: 674px;
+  top: 5px;
+  left: 557px;
 }
 
 .advantage.credit.active::after {
   content: url("../img/advantages-credit.svg");
   position: absolute;
-  top: 4px;
-  left: 674px;
+  top: 5px;
+  left: 557px;
 }
 
 /* Special */
