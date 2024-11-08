@@ -1048,6 +1048,8 @@ address {
 .special-wrapper {
   min-height: 100px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .special-more-wrapper {
@@ -1082,9 +1084,7 @@ address {
 }
 
 .special-text {
-  margin: auto;
   display: block;
-  padding: 10px 125px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -1098,11 +1098,11 @@ address {
 
 .info-container {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 63px;
+  gap: 108px;
 }
 
-.about,
-.contacts {
+.about {
   width: 520px;
 }
 
@@ -1113,7 +1113,7 @@ address {
   width: 84px;
   height: 7px;
   background-color: #000000;
-  margin-bottom: 61px;
+  margin-bottom: 42px;
 }
 
 .about .title,
@@ -1131,25 +1131,41 @@ address {
 .contacts-container {
   display: grid;
   gap: 30px;
+  margin-bottom: 25px;
 }
 
 .about-button,
 .contacts-button {
   width: 270px;
-  /* height: 40px; */
 }
 
 /* About */
 
-.about {
-  margin-right: auto;
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
 }
 
 .about-list-item {
-  color: #ffc700;
+  display: flex;
+
+}
+
+.about-list-item::before {
+  content: "";
+  display: block;
+  background-color: #ffc700;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  margin-right: 26px;
+  margin-left: 3px;
+
 }
 
 .about-list-item-text {
+  display: block;
   color: #000000;
   font-weight: 700;
   line-height: 111%;
@@ -1157,6 +1173,10 @@ address {
 }
 
 /* Contacts */
+
+.contacts {
+  width: 532px;
+}
 
 .contacts-title {
   font-weight: 700;
