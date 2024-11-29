@@ -1236,11 +1236,11 @@ address {
 /* Catalog header */
 
 .catalog-header {
-  padding: 35px 21px 35px 60px;
+  padding: 35px 21px 28px 60px;
 }
 
 .catalog-title {
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 
 .breadcrumbs {
