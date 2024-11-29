@@ -1240,14 +1240,14 @@ address {
 }
 
 .catalog-title {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs {
   display: flex;
   min-height: 19px;
   align-items: center;
-  gap: 36px;
+  gap: 38px;
 }
 
 .breadcrumbs-link {
@@ -1265,7 +1265,7 @@ address {
   height: 7px;
   opacity: 0.3;
   position: absolute;
-  right: -20px;
+  right: -23px;
   bottom: 25px;
 }
 
