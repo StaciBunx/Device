@@ -1281,9 +1281,6 @@ address {
 
 /* Filter */
 
-.filter,
-.sort {}
-
 .filter-title,
 .sort-title {
   font-family: "Raleway", sans-serif;
@@ -1295,13 +1292,13 @@ address {
 }
 
 .filter-title {
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 
 .filter {
   box-sizing: border-box;
   width: 320px;
-  padding: 25px 60px 0;
+  padding: 21px 60px 0;
 }
 
 .filter-fieldset {
@@ -1314,7 +1311,15 @@ address {
   line-height: 111%;
   letter-spacing: -0.02em;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+}
+
+.filter-fieldset-price>.filter-fieldset-title {
+  margin-bottom: 27px;
+}
+
+.filter-fieldset-color {
+  margin-bottom: 30px;
 }
 
 .filter-fieldset-title::before {
@@ -1323,19 +1328,18 @@ address {
   height: 2px;
   width: 200px;
   background-color: #000000;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 }
 
 .filter-button {
   width: 220px;
-  /* height: 40px; */
 }
 
 .filter-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 168px;
+  min-height: 176px;
 }
 
 /* Slider-bar */
@@ -1348,7 +1352,7 @@ address {
   height: 2px;
   background-color: #dcdcdc;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 
 .slider-bar {
@@ -1362,8 +1366,8 @@ address {
 
 .slider-thumb {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   background-color: #ebebeb;
   border: 2px solid #000000;
   border-radius: 50%;
@@ -1384,7 +1388,7 @@ address {
 }
 
 .thumb-max {
-  right: 0;
+  right: -10px;
 }
 
 /* Range */
@@ -1409,11 +1413,11 @@ address {
 }
 
 
-.range-field_label.min {
+.range-field-label.min {
   left: -14px;
 }
 
-.range-field_label.max {
+.range-field-label.max {
   left: 0;
 }
 
@@ -1530,7 +1534,7 @@ address {
 .sort {
   display: flex;
   justify-content: space-between;
-  padding: 25px 40px;
+  padding: 21px 40px;
 }
 
 .select-control {
