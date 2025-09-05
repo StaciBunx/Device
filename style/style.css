@@ -1534,7 +1534,7 @@ address {
 .sort {
   display: flex;
   justify-content: space-between;
-  padding: 21px 40px;
+  padding: 21px 40px 11px;
 }
 
 .select-control {
@@ -1625,12 +1625,13 @@ address {
 
 .card-text-content {
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: 226px 1fr;
   column-gap: 10px;
   justify-items: end;
 }
 
 .card-title {
+  font-size: 18px;
   font-weight: 700;
   line-height: 111%;
   letter-spacing: -0.02em;
