@@ -1540,11 +1540,11 @@ address {
 .sort {
   display: flex;
   justify-content: space-between;
-  padding: 21px 40px 11px;
+  padding: 21px 40px 18px;
 }
 
 .select-control {
-  width: 160px;
+  width: 158px;
   height: 30px;
   border: none;
   background-color: transparent;
@@ -1589,7 +1589,7 @@ address {
   opacity: 0.3;
 }
 
-.sort-button.down .sort-button-content {
+.sort-button.down {
   transform: rotate(180deg);
 }
 
