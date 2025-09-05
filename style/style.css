@@ -1303,7 +1303,7 @@ address {
 
 .filter-fieldset {
   border: none;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .filter-fieldset-title {
@@ -1448,6 +1448,7 @@ address {
 
 .control {
   position: relative;
+  display: block;
 }
 
 .control:hover {
@@ -1456,6 +1457,10 @@ address {
 
 .control:active {
   opacity: 0.3;
+}
+
+.control.bluetooth+.bluetooth {
+  margin-top: 10px;
 }
 
 .outline-wrapper {
@@ -1473,6 +1478,7 @@ address {
   display: grid;
   grid-template-columns: 20px 1fr;
   gap: 16px;
+  font-size: 16px;
   align-items: center;
   color: #000000;
 }
