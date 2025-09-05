@@ -74,6 +74,7 @@ address {
 
 .button {
   display: flex;
+  padding: 10px 10px;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -81,13 +82,15 @@ address {
   border: none;
   cursor: pointer;
   outline: 2px solid transparent;
+  min-height: 40px;
+  text-align: center;
 
 }
 
 .button::before {
   content: "";
   position: absolute;
-  top: 38%;
+  top: calc((100% - 8px) / 2);
   left: 0;
   width: 100%;
   height: 8px;
@@ -96,13 +99,13 @@ address {
 }
 
 .button span {
-  position: absolute;
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  z-index: 10;
 }
 
 .button:focus-visible {
@@ -111,7 +114,7 @@ address {
 
 .button:hover::before {
   top: 0;
-  height: 40px;
+  height: 100%;
 }
 
 .button:active::before {
@@ -124,9 +127,7 @@ address {
 
 .logo-link {
   display: grid;
-  place-content: center;
   width: 149px;
-  height: 40px;
   outline: 2px solid transparent;
 }
 
@@ -147,7 +148,7 @@ address {
 
 .page-header {
   background-image: linear-gradient(to bottom, #ffffff 40px, #ffe17f 40px);
-  padding: 18px 60px 38px;
+  padding: 18px 60px 21px;
 }
 
 .header-top {
@@ -158,12 +159,18 @@ address {
 /* Header User Menu */
 
 .user-menu-list {
-  display: grid;
-  grid-template-columns: max-content 1fr auto auto;
+  display: flex;
   align-items: center;
-  gap: 18px;
+  justify-content: space-between;
   width: 497px;
-  height: 40px;
+  min-height: 40px;
+}
+
+.user-menu-list-authorization,
+.user-menu-list-products {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
 }
 
 .user-menu-item {
@@ -172,8 +179,6 @@ address {
 
 .user-menu-link {
   color: #000000;
-  padding: 7px 5px;
-  padding-right: 0;
   outline: 2px solid transparent;
 }
 
@@ -191,9 +196,7 @@ address {
 
 .user-menu-login::before {
   content: url("../img/header-icon-login.svg");
-  width: 13px;
-  height: 13px;
-  margin-right: 9px;
+  margin-right: 14px;
 }
 
 .user-menu-logout {
@@ -237,7 +240,7 @@ address {
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  top: 8px;
+  top: -1px;
   left: 2px;
 }
 
@@ -245,6 +248,8 @@ address {
 
 .navigation-menu-list {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .navigation-menu-item-catalog {
@@ -252,7 +257,10 @@ address {
 }
 
 .navigation-menu-link {
+  display: flex;
+  align-items: center;
   color: #000000;
+  min-height: 50px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
@@ -261,12 +269,12 @@ address {
 }
 
 .navigation-catalog {
-  padding: 15px 70px 17px 2px;
+  padding-right: 70px;
 }
 
 .navigation-menu-button {
   position: absolute;
-  left: 243px;
+  right: 3px;
   top: calc((100% - 50px)/2);
   opacity: 0.3;
   cursor: pointer;
@@ -294,14 +302,13 @@ address {
   opacity: 0.3;
 }
 
-.navigation-menu-right {
-  width: 471px;
-  margin-left: auto;
-}
 
 .navigation-menu-right ul {
+  width: 471px;
   display: flex;
-  gap: 47px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  justify-content: space-between;
 }
 
 /* Footer */
@@ -319,14 +326,13 @@ address {
 }
 
 .footer-center-row {
+  margin-bottom: 45px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 47px;
+  flex-wrap: wrap;
 }
 
 .footer-address {
-  width: 239px;
+  width: 270px;
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
@@ -335,6 +341,11 @@ address {
 }
 
 .footer-telefon {
+  width: 280px;
+  text-align: right;
+}
+
+.footer-telefon a {
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
@@ -343,32 +354,37 @@ address {
   outline: 2px solid transparent;
 }
 
-.footer-telefon:focus-visible {
+.footer-telefon a:focus-visible {
   outline-color: #af4fff;
 }
 
-.footer-telefon:hover {
+.footer-telefon a:hover {
   color: #ffc700;
 }
 
-.footer-telefon:active {
+.footer-telefon a:active {
   opacity: 0.3;
 }
 
 .footer-list {
-  width: 444px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 31px;
+  justify-content: center;
 }
 
 .footer-link {
+  display: block;
   color: #ffffff;
+  text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   outline: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .footer-link:focus-visible {
@@ -377,19 +393,17 @@ address {
 
 .footer-link:hover {
   color: #ffc700;
-  border-bottom: 2px solid #ffc700;
+  border-color: #ffc700;
 }
 
 .footer-link:active {
   opacity: 0.3;
 }
 
-
 .footer-bottom-row {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 150px 1fr;
-
 }
 
 .footer-bottom-row::before {
@@ -466,35 +480,13 @@ address {
   position: relative;
 }
 
-.search-field-input {
-  position: relative;
-  font-family: inherit;
-  color: #000000;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
-  border: 2px solid #000000;
-  border-radius: 50px 0 0 50px;
-  padding-left: 48px;
-  width: 359px;
-  height: 40px;
-  background-color: transparent;
-  border-right: none;
-  outline: transparent;
+.search-inputbox {
+  display: flex;
+  flex-direction: column;
 }
 
-.search-field-label::before {
+.search-inputbox::before {
   content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  background-image: url("../img/search.svg");
-  position: absolute;
-  top: 12px;
-  left: 16px;
-}
-
-.search-outline-wrapper {
   display: none;
   position: absolute;
   top: -2px;
@@ -504,8 +496,37 @@ address {
   height: 44px;
 }
 
-.search-field-group:focus-within .search-outline-wrapper {
+.search-field-group:focus-within .search-inputbox::before {
   display: block;
+}
+
+.search-field-input {
+  flex: 1;
+  position: relative;
+  font-family: inherit;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  width: 359px;
+  padding: 8px 0 8px 48px;
+  background-color: transparent;
+  border-right: none;
+  outline: transparent;
+  height: inherit;
+}
+
+.search-field-label::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/search.svg");
+  position: absolute;
+  top: calc((100% - 16px) / 2);
+  left: 16px;
 }
 
 .search-field-input::placeholder {
@@ -534,9 +555,11 @@ address {
   border-radius: 0 50px 50px 0;
   width: 160px;
   outline: transparent;
+  padding: 5px;
 }
 
-.search-button-outline-wrapper {
+.search-field-button::before {
+  content: "";
   display: none;
   position: absolute;
   top: -2px;
@@ -544,6 +567,10 @@ address {
   outline: 2px solid #af4fff;
   width: 160px;
   height: 44px;
+}
+
+.search-field-group:focus-within .search-field-button::before {
+  display: block;
 }
 
 .search-field-button:hover:enabled {
@@ -556,10 +583,6 @@ address {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.3);
   background-color: #000000;
-}
-
-.search-field-group:focus-within .search-button-outline-wrapper {
-  display: block;
 }
 
 .search-field-button:disabled {
@@ -581,8 +604,8 @@ address {
   line-height: inherit;
   background-color: transparent;
   border: none;
-  width: 557px;
-  height: 57px;
+  width: 655px;
+  min-height: 57px;
   padding: 0 0 0 16px;
   outline: transparent;
   border-bottom: 3px solid #cecece;
@@ -605,6 +628,7 @@ address {
 }
 
 .subscribe-field-button {
+  padding: 5px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -615,7 +639,7 @@ address {
   border: 3px solid #cecece;
   width: 292px;
   cursor: pointer;
-  height: 57px;
+  min-height: 57px;
   outline: 2px solid transparent;
 }
 
@@ -644,6 +668,7 @@ address {
 /* Slider */
 
 .slider {
+  padding-bottom: 38px;
   margin-bottom: 70px;
 }
 
@@ -666,8 +691,8 @@ address {
   position: absolute;
   display: flex;
   gap: 16px;
-  right: 0;
-  bottom: 173px;
+  right: -2px;
+  top: 337px;
   z-index: 30;
 }
 
@@ -726,8 +751,8 @@ address {
   letter-spacing: 1.79px;
   color: #ffffff;
   position: absolute;
-  top: -24px;
-  right: 48px;
+  top: -29px;
+  right: 45px;
   z-index: 10;
 }
 
@@ -735,7 +760,7 @@ address {
   display: block;
   height: 560px;
   position: absolute;
-  top: -38px;
+  top: -36px;
 }
 
 .slider-image-control {
@@ -749,14 +774,14 @@ address {
 
 .slider-image-control.left {
   position: absolute;
-  top: 173px;
+  top: 175px;
   left: 30px
 }
 
 .slider-image-control.right {
   position: absolute;
-  top: 173px;
-  left: 560px
+  top: 175px;
+  left: 540px
 }
 
 .slider-image-control:focus-visible {
@@ -782,22 +807,22 @@ address {
 }
 
 .slider-description {
-  padding: 29px 0 51px;
+  padding: 29px 0 47px;
 }
 
 .slider-button {
-  width: 220px;
-  height: 40px;
-  margin-bottom: 50px;
+  max-width: 220px;
+  margin-bottom: 43px;
 }
 
 .slider-details {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 13px;
 }
 
 .slider-details-item {
-  width: 147px;
+  min-width: 147px;
 }
 
 .slider-details-item dt {
@@ -822,55 +847,60 @@ address {
 
 .category-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .category-item {
   width: 160px;
-  height: 253px;
+  min-height: 253px;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
 .category-link {
   display: block;
-  position: relative;
+}
+
+.category-link::before {
+  content: "";
+  display: block;
   height: 160px;
   background-color: #ffe17f;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 34px;
 }
 
-.category-link.vr {
+.category-link.vr::before {
   background-image: url("../img/category-images-1.svg");
 }
 
-.category-link.monopods {
+.category-link.monopods::before {
   background-image: url("../img/category-images-2.svg");
 }
 
-.category-link.action-cameras {
+.category-link.action-cameras::before {
   background-image: url("../img/category-images-3.svg");
 }
 
-.category-link.fitness-band {
+.category-link.fitness-band::before {
   background-image: url("../img/category-images-4.svg");
 }
 
-.category-link.smart-watch {
+.category-link.smart-watch::before {
   background-image: url("../img/category-images-5.svg");
 }
 
-.category-link.drones {
+.category-link.drones::before {
   background-image: url("../img/category-images-6.svg");
 }
 
 .category-link span {
-  position: absolute;
-  top: 192px;
+  display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  line-height: 133%;
+  line-height: 130%;
   letter-spacing: -0.02em;
   color: #000000;
 }
@@ -894,7 +924,7 @@ address {
 /* Advantages */
 
 .advantages {
-  height: 390px;
+  min-height: 390px;
   background-image: linear-gradient(to bottom, #ffffff 100px, #f0f0f0 100px);
   margin-bottom: 70px;
 }
@@ -904,15 +934,14 @@ address {
 }
 
 .advantages-list {
-  width: 280px;
-  height: 320px;
-  border-right: #000000 solid 7px;
-  padding: 64px 0;
+  width: 288px;
+  min-height: 320px;
+  border-right: #000000 solid 8px;
+  padding: 64px 0 29px;
 }
 
 .advantages-button {
   width: 160px;
-  height: 40px;
   margin-bottom: 35px;
   z-index: 10;
 }
@@ -920,6 +949,7 @@ address {
 .advantages-button.active {
   width: 280px;
   padding-right: 120px;
+  background-color: #000000;
 }
 
 .advantages-button.active span {
@@ -929,7 +959,6 @@ address {
 .advantages-button.active::before {
   top: 0;
   width: 280px;
-  height: 40px;
   background-color: #000000;
   outline: 2px solid none;
   outline-offset: 2px;
@@ -951,13 +980,12 @@ address {
   padding: 72px 63px 72px 116px;
 }
 
-
 .advantage-title {
   margin-bottom: 35px;
 }
 
 .advantage-text {
-  width: 450px;
+  width: 455px;
 }
 
 .advantage {
@@ -969,25 +997,26 @@ address {
   display: block;
 }
 
+
 .advantage.delivery.active::after {
   content: url("../img/advantages-delivery.svg");
   position: absolute;
-  top: 4px;
-  left: 674px;
+  top: 5px;
+  left: 557px;
 }
 
 .advantage.warranty.active::after {
   content: url("../img/advantages-warranty.svg");
   position: absolute;
-  top: 4px;
-  left: 674px;
+  top: 5px;
+  left: 557px;
 }
 
 .advantage.credit.active::after {
   content: url("../img/advantages-credit.svg");
   position: absolute;
-  top: 4px;
-  left: 674px;
+  top: 5px;
+  left: 557px;
 }
 
 /* Special */
@@ -999,25 +1028,28 @@ address {
 .special-link {
   background-color: #f0f0f0;
   display: block;
-  height: 100px;
+  min-height: 100px;
   outline: 2px solid transparent;
   position: relative;
 }
 
-.special-wrapper {
-  height: 100px;
-  display: flex;
-}
-
-.special-icon-wrapper {
+.special-link::before {
+  content: "";
   position: absolute;
   width: 125px;
-  height: 100px;
+  min-height: 100px;
   background-color: #ffe17f;
   background-image: url("../img/special-delivery-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 10;
+}
+
+.special-wrapper {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .special-more-wrapper {
@@ -1052,7 +1084,6 @@ address {
 }
 
 .special-text {
-  margin: auto;
   display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1067,11 +1098,11 @@ address {
 
 .info-container {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 63px;
+  gap: 108px;
 }
 
-.about,
-.contacts {
+.about {
   width: 520px;
 }
 
@@ -1082,7 +1113,7 @@ address {
   width: 84px;
   height: 7px;
   background-color: #000000;
-  margin-bottom: 61px;
+  margin-bottom: 42px;
 }
 
 .about .title,
@@ -1100,25 +1131,41 @@ address {
 .contacts-container {
   display: grid;
   gap: 30px;
+  margin-bottom: 25px;
 }
 
 .about-button,
 .contacts-button {
   width: 270px;
-  height: 40px;
 }
 
 /* About */
 
-.about {
-  margin-right: auto;
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
 }
 
 .about-list-item {
-  color: #ffc700;
+  display: flex;
+
+}
+
+.about-list-item::before {
+  content: "";
+  display: block;
+  background-color: #ffc700;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  margin-right: 26px;
+  margin-left: 3px;
+
 }
 
 .about-list-item-text {
+  display: block;
   color: #000000;
   font-weight: 700;
   line-height: 111%;
@@ -1126,6 +1173,10 @@ address {
 }
 
 /* Contacts */
+
+.contacts {
+  width: 532px;
+}
 
 .contacts-title {
   font-weight: 700;
@@ -1147,7 +1198,7 @@ address {
 
 .subscribe-top {
   display: flex;
-  padding: 64px 0 114px;
+  padding: 64px 0 145px;
 
 }
 
@@ -1157,42 +1208,46 @@ address {
 }
 
 .subscribe-text {
-  width: 560px;
+  padding-top: 10px;
+  max-width: 560px;
+  min-height: 90px;
 }
 
 .subscribe-bottom {
-  width: 1158px;
+  max-width: 1158px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-bottom: 52px;
+  padding-bottom: 56px;
   position: relative;
+}
+
+.subscribe-note {
+  max-width: 160px;
 }
 
 .subscribe-note::before {
   content: url("../img/icon-tick-big.svg");
-  /* margin-right: 17px; */
   position: absolute;
   top: 15px;
   right: 143px;
-
 }
 
 /* Catalog header */
 
 .catalog-header {
-  padding: 35px 21px 35px 60px;
+  padding: 35px 21px 28px 60px;
 }
 
 .catalog-title {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs {
   display: flex;
-  height: 19px;
+  min-height: 19px;
   align-items: center;
-  gap: 36px;
+  gap: 38px;
 }
 
 .breadcrumbs-link {
@@ -1210,7 +1265,7 @@ address {
   height: 7px;
   opacity: 0.3;
   position: absolute;
-  right: -20px;
+  right: -23px;
   bottom: 25px;
 }
 
@@ -1226,9 +1281,6 @@ address {
 
 /* Filter */
 
-.filter,
-.sort {}
-
 .filter-title,
 .sort-title {
   font-family: "Raleway", sans-serif;
@@ -1240,22 +1292,18 @@ address {
 }
 
 .filter-title {
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 
 .filter {
   box-sizing: border-box;
   width: 320px;
-  padding: 25px 60px 0;
+  padding: 21px 60px 0;
 }
 
 .filter-fieldset {
   border: none;
-  margin-bottom: 35px;
-}
-
-.filter-fieldset-price {
-  padding-bottom: 46px;
+  margin-bottom: 33px;
 }
 
 .filter-fieldset-title {
@@ -1263,7 +1311,15 @@ address {
   line-height: 111%;
   letter-spacing: -0.02em;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+}
+
+.filter-fieldset-price>.filter-fieldset-title {
+  margin-bottom: 27px;
+}
+
+.filter-fieldset-color {
+  margin-bottom: 30px;
 }
 
 .filter-fieldset-title::before {
@@ -1272,27 +1328,31 @@ address {
   height: 2px;
   width: 200px;
   background-color: #000000;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 }
 
 .filter-button {
   width: 220px;
-  height: 40px;
 }
 
 .filter-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 168px;
+  min-height: 176px;
 }
 
 /* Slider-bar */
+
+.range {
+  max-width: 200px;
+}
 
 .range-slider {
   height: 2px;
   background-color: #dcdcdc;
   position: relative;
+  margin-bottom: 9px;
 }
 
 .slider-bar {
@@ -1306,8 +1366,8 @@ address {
 
 .slider-thumb {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   background-color: #ebebeb;
   border: 2px solid #000000;
   border-radius: 50%;
@@ -1328,25 +1388,37 @@ address {
 }
 
 .thumb-max {
-  right: 0;
+  right: -10px;
 }
 
 /* Range */
 
-.range-field {
-  position: absolute;
-  top: 11px;
+.range-wrapper-inputs {
+  display: flex;
+  overflow: auto;
+}
+
+.range-field-label {
+  display: flex;
   font-weight: 400;
   font-size: 15px;
   color: #c1c1c1;
+  line-height: normal;
+  position: relative;
 }
 
-.range-field.min {
+.range-title {
+  padding: 2px 0;
+  margin-right: 5px;
+}
+
+
+.range-field-label.min {
   left: -14px;
 }
 
-.range-field.max {
-  right: 55px;
+.range-field-label.max {
+  left: 0;
 }
 
 .range-input {
@@ -1356,6 +1428,7 @@ address {
   background-color: transparent;
   appearance: textfield;
   width: 5ch;
+  padding: 2px 0;
   border: transparent;
   outline: 2px solid transparent;
   color: inherit;
@@ -1375,6 +1448,7 @@ address {
 
 .control {
   position: relative;
+  display: block;
 }
 
 .control:hover {
@@ -1383,6 +1457,10 @@ address {
 
 .control:active {
   opacity: 0.3;
+}
+
+.control.bluetooth+.bluetooth {
+  margin-top: 10px;
 }
 
 .outline-wrapper {
@@ -1400,6 +1478,7 @@ address {
   display: grid;
   grid-template-columns: 20px 1fr;
   gap: 16px;
+  font-size: 16px;
   align-items: center;
   color: #000000;
 }
@@ -1461,11 +1540,11 @@ address {
 .sort {
   display: flex;
   justify-content: space-between;
-  padding: 25px 40px;
+  padding: 21px 40px 18px;
 }
 
 .select-control {
-  width: 160px;
+  width: 158px;
   height: 30px;
   border: none;
   background-color: transparent;
@@ -1510,7 +1589,7 @@ address {
   opacity: 0.3;
 }
 
-.sort-button.down .sort-button-content {
+.sort-button.down {
   transform: rotate(180deg);
 }
 
@@ -1531,13 +1610,14 @@ address {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 44px 40px;
   background-color: #ffffff;
   padding: 70px 40px 0 40px;
 }
 
 .card {
   position: relative;
+  max-width: 360px;
 }
 
 .card-link {
@@ -1551,11 +1631,12 @@ address {
 
 .card-text-content {
   display: grid;
-  grid-template-columns: min-content 1fr;
-  justify-items: end;
+  grid-template-columns: 226px 1fr;
+  column-gap: 10px;
 }
 
 .card-title {
+  font-size: 18px;
   font-weight: 700;
   line-height: 111%;
   letter-spacing: -0.02em;
@@ -1563,12 +1644,14 @@ address {
 }
 
 .card-price {
+  font-size: 18px;
   color: #444444;
+  line-height: 111%;
+  justify-self: end;
 }
 
 .card-button {
   display: none;
-  height: 40px;
   width: 220px;
   justify-content: center;
   align-items: center;
@@ -1580,7 +1663,7 @@ address {
 .card-button::before {
   content: "";
   position: absolute;
-  top: 38%;
+  top: calc((100% - 8px) / 2);
   left: 0;
   width: 100%;
   height: 8px;
@@ -1595,6 +1678,8 @@ address {
   font-size: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: center;
+
 }
 
 .card-link:focus-visible {
@@ -1634,6 +1719,7 @@ address {
   text-transform: uppercase;
   cursor: pointer;
   outline: 2px solid transparent;
+  padding: 5px;
 }
 
 .pagination-button:focus-visible {
@@ -1650,16 +1736,15 @@ address {
 }
 
 .pagination-container {
-  height: 71px;
+  min-height: 71px;
   background-color: #ebebeb;
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: 128px 1fr 141px;
 }
 
 .pagination-control {
-  display: inline-block;
-  height: 71px;
-  padding: 25px;
+  display: flex;
+  min-height: 71px;
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
@@ -1667,8 +1752,9 @@ address {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   z-index: 10;
-  position: absolute;
   outline: 2px solid transparent;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination-control.forward {
@@ -1689,7 +1775,6 @@ address {
 }
 
 .pagination-list {
-  width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1698,8 +1783,8 @@ address {
 }
 
 .pagination-link {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
