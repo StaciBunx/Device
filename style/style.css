@@ -1627,7 +1627,6 @@ address {
   display: grid;
   grid-template-columns: 226px 1fr;
   column-gap: 10px;
-  justify-items: end;
 }
 
 .card-title {
@@ -1639,7 +1638,10 @@ address {
 }
 
 .card-price {
+  font-size: 18px;
   color: #444444;
+  line-height: 111%;
+  justify-self: end;
 }
 
 .card-button {
