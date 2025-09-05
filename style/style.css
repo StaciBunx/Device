@@ -1733,13 +1733,12 @@ address {
   min-height: 71px;
   background-color: #ebebeb;
   display: grid;
-  grid-template-columns: 128px 1fr 128px;
+  grid-template-columns: 128px 1fr 141px;
 }
 
 .pagination-control {
-  display: block;
+  display: flex;
   min-height: 71px;
-  padding: 25px;
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
@@ -1748,6 +1747,8 @@ address {
   text-transform: uppercase;
   z-index: 10;
   outline: 2px solid transparent;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination-control.forward {
